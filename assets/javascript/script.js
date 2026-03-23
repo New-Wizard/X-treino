@@ -90,7 +90,6 @@
                     }
 
                     // critério 2 → posição da equipe (menor primeiro)
-                    console.log(posicaoEquipe[a.equipe] - posicaoEquipe[b.equipe])
                     return posicaoEquipe[a.equipe] - posicaoEquipe[b.equipe]
                     })
                         
