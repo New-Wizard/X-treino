@@ -1,0 +1,141 @@
+{
+    "season1": {
+        "data": "09/03/2026",
+        "equipes":[
+            { "equipe": "LK 01", "quedas": 5, "abates": 63, "booyah": 1, "pts": 106},
+            { "equipe": "Equipe Russo 03", "quedas": 5, "abates": 30, "booyah": 0, "pts": 83},
+            { "equipe": "Equipe Russo 02", "quedas": 5, "abates": 47, "booyah": 1, "pts": 74 },
+            { "equipe": "Team Fluxo", "quedas": 5, "abates": 35, "booyah": 1, "pts": 62},
+            { "equipe": "LK 02", "quedas": 5, "abates": 29, "booyah": 1, "pts": 61},
+            { "equipe": "Equipe Russo 01", "quedas": 5, "abates": 29, "booyah": 1, "pts": 57},
+            { "equipe": "Beserkers", "quedas": 5, "abates": 24, "booyah": 0, "pts":49},
+            { "equipe": "Not Mobile", "quedas": 5, "abates": 18, "booyah": 0, "pts": 36},
+            { "equipe": "Beserkers 2.0", "quedas": 5, "abates": 12, "booyah": 0, "pts":29},
+            { "equipe": "Ghost", "quedas": 5, "abates": 13, "booyah": 0, "pts": 23},
+            { "equipe": "De Manaus", "quedas": 5, "abates": 9, "booyah": 0, "pts": 21},
+            { "equipe": "Trupe Skull", "quedas": 5, "abates": 0, "booyah": 0, "pts": 2}
+        ]
+    }, 
+    "season2": {
+        "data": "15/11/2023",
+        "equipes":[
+            { "equipe": "J6 Eceleny", "quedas": 5, "abates": 53, "booyah": 1, "pts": 91},
+            { "equipe": "Fanaticos 01", "quedas": 5, "abates": 51, "booyah": 1, "pts": 83},
+            { "equipe": "Lk 02", "quedas": 5, "abates": 38, "booyah": 2, "pts": 79},
+            { "equipe": "Lk 01", "quedas": 5, "abates": 44, "booyah": 0, "pts":79},
+            { "equipe": "Equipe Russo 01", "quedas": 5, "abates": 51, "booyah": 0, "pts": 77},
+            { "equipe": "Fanaticos 02", "quedas": 5, "abates": 38, "booyah": 0, "pts": 61},
+            { "equipe": "Beserkers", "quedas": 5, "abates": 26, "booyah": 1, "pts": 55},
+            { "equipe": "Equipe Russo 03", "quedas": 5, "abates": 29, "booyah": 0, "pts": 53},
+            { "equipe": "Equipe Russo 02", "quedas": 5, "abates": 21, "booyah": 0, "pts": 35},
+            { "equipe": "De Manaus", "quedas": 5, "abates": 21, "booyah": 0, "pts": 33},
+            { "equipe": "Beserkers 2.0", "quedas": 5, "abates": 18, "booyah": 0, "pts": 27},
+            { "equipe": "Ghost", "quedas": 5, "abates": 4, "booyah": 0, "pts": 6}
+        ]
+    },
+    "season3": {
+        "data": "16/11/2023",
+        "equipes":[
+            { "equipe": "Hazard FM7", "quedas": 5, "abates": 59, "booyah": 4, "pts": 116},
+            { "equipe": "Equipe Russo 01", "quedas": 5, "abates": 58, "booyah": 0, "pts": 89},
+            { "equipe": "Equipe Russo 02", "quedas": 5, "abates": 48, "booyah": 1, "pts": 84},
+            { "equipe": "Lk 02", "quedas": 5, "abates": 26, "booyah": 0, "pts": 53},
+            { "equipe": "LK 01", "quedas": 5, "abates": 17, "booyah": 0, "pts": 45},
+            { "equipe": "Beserkers", "quedas": 5, "abates": 13, "booyah": 0, "pts": 40},
+            { "equipe": "Not Mobile", "quedas": 5, "abates": 16, "booyah": 0, "pts": 38},
+            { "equipe": "Beserkers 2.0", "quedas": 5, "abates": 10, "booyah": 0, "pts": 26},
+            { "equipe": "Night Raid", "quedas": 5, "abates": 10, "booyah": 0, "pts": 22},
+            { "equipe": "Line Ifood", "quedas": 5, "abates": 9, "booyah": 0, "pts": 17},
+            { "equipe": "Team Fluxo", "quedas": 5, "abates": 3, "booyah": 0, "pts": 15},
+            { "equipe": "QLS", "quedas": 5, "abates": 0, "booyah": 0, "pts": 0}
+            
+        ]
+    },
+     "season4": {
+        "data": "18/11/2023",
+        "equipes":[
+            { "equipe": "Hazard FM7", "quedas": 5, "abates": 92, "booyah": 3, "pts": 143},
+            { "equipe": "LK 02", "quedas": 5, "abates": 45, "booyah": 1, "pts": 82},
+            { "equipe": "Not Mobile", "quedas": 5, "abates": 31, "booyah": 1, "pts": 74},
+            { "equipe": "Equipe Russo 02", "quedas": 5, "abates": 34, "booyah": 0, "pts": 59},
+            { "equipe": "TPK E-Sport", "quedas": 5, "abates": 21, "booyah": 0, "pts": 55},
+            { "equipe": "Trupe Skull", "quedas": 5, "abates": 29, "booyah": 0, "pts": 53},
+            { "equipe": "LK 03", "quedas": 5, "abates": 22, "booyah": 0, "pts": 48},
+            { "equipe": "LK 01", "quedas": 5, "abates": 25, "booyah": 0, "pts": 45},
+            { "equipe": "Night Raid", "quedas": 5, "abates": 4, "booyah": 0, "pts": 15},
+            { "equipe": "Beserkers", "quedas": 5, "abates": 1, "booyah": 0, "pts": 11},
+            { "equipe": "Equipe Russo 01", "quedas": 5, "abates": 0, "booyah": 0, "pts": 0},
+            { "equipe": "De Manaus", "quedas": 5, "abates": 0, "booyah": 0, "pts": 0}
+            
+        ]
+    },
+    "season5": {
+  "data": "23/11/2023",
+  "equipes": [
+    {
+      "equipe": "Hazard FM7",
+      "detalhes": [
+        {
+          "queda": 1,
+          "kills": 5,
+          "posicao": 2
+        },
+        {
+          "queda": 2,
+          "kills": 3,
+          "posicao": 5
+        },
+        {
+          "queda": 3,
+          "kills": 7,
+          "posicao": 1
+        },
+        {
+          "queda": 4,
+          "kills": 2,
+          "posicao": 8
+        },
+        {
+          "queda": 5,
+          "kills": 4,
+          "posicao": 3
+        }
+      ]
+    },
+
+    {
+      "equipe": "Alpha Squad",
+      "detalhes": [
+        {
+          "queda": 1,
+          "kills": 6,
+          "posicao": 1
+        },
+        {
+          "queda": 2,
+          "kills": 2,
+          "posicao": 7
+        },
+        {
+          "queda": 3,
+          "kills": 5,
+          "posicao": 4
+        },
+        {
+          "queda": 4,
+          "kills": 3,
+          "posicao": 6
+        },
+        {
+          "queda": 5,
+          "kills": 8,
+          "posicao": 2
+        }
+      ]
+    }
+  ]
+}
+            
+            
+        
+}

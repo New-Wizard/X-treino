@@ -1,0 +1,668 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    /* Fonte mais moderna */
+    background: radial-gradient(circle at center, #0F2B55 0%, #0B1E3A 40%, #070C18 100%);
+    color: white;
+}
+
+.largura-definida {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+
+
+/* --- HEADER --- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    // background-color: #0b111e;
+    // background-color: rgba(11, 17, 30, 0.7);
+    background-color: transparent;
+    backdrop-filter: blur(1rem);
+    border-bottom: 1px solid #1e293b;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+
+    .header_container {
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+    }
+    .header_logo img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 2px solid #2056DF;
+    }
+    .header_text h1 {
+    color: #5CA0F9;
+    font-size: 2.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    }
+    .header_text p {
+    color: #9CA3AF;
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* --- MAIN CONTAINER --- */
+.container {
+    padding: 4rem 2rem;
+
+
+    //sistema de pontuação
+    .btn-scoring-system{
+        background-color: #7C4710;
+        border: none;
+        padding: 2rem;
+        width: 100%;
+        color: white;
+        font-size: 2em;
+        text-align: left;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 2rem;
+        // border-start-start-radius: 2rem;
+        transition: all 0.3s ease-in-out;
+    }
+    .grau180{
+        transform: rotate(180deg);
+        transition: all 0.3s ease-in-out;
+    }
+    .juntar{
+        border-radius: 2rem 2rem 0 0;
+    }
+    .btn-scoring-system:hover{
+        background-color: #975b1a;
+        cursor: pointer;
+    }
+    .ativo{
+        transition: all 0.3s ease-in-out;
+        padding: 2rem;
+        border: 1px solid #7d480f80;
+        height: auto !important;
+    }
+    .scoring-system{
+        background: linear-gradient(to bottom right, #171f2e, #000000);
+        // padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        // border: 1px solid #7d480f80;
+        border-radius: 0 0 2rem 2rem;
+        margin-bottom: 2rem;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        .scoring-system_pontosColocação{
+            flex: 1;
+        }
+        .scoring-system_pontosColocação h1{
+            color: #FACC15;
+            font-size: 2.2em;
+            margin-bottom: 2rem;
+        }
+        .scoring-system_pontosColocação > ul{
+            list-style: none;
+        }
+        .scoring-system_pontosColocação > ul > li{
+            display: flex;
+            justify-content: space-between;
+            background-color: #161D29;
+            color: white;
+            font-size: 1.8em;
+            font-weight: bold;
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+            border-radius: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.199);
+        }
+        .scoring-system_pontosColocação > ul > li > span{
+            color: #FACC15;
+            font-size: 2.2rem;
+        }
+        .scoring-system_kill{
+            flex: 1;
+            .scoring-system_kill_title{
+                color: #42C672;
+                font-size: 2em;
+                margin-bottom: 1rem;
+            }
+            .scoring-system_kill_kills{
+                background-color: #0B1E1A;
+                border: 1px solid #0E5D2F;
+                padding: 3rem;
+                text-align: center;
+                border-radius: 2rem;
+            }
+            .scoring-system_kill_kills h2{
+                color: #42C672;
+                font-weight: bolder;
+                font-size: 4em;   
+            }
+            .scoring-system_kill_kills p:nth-child(2){
+                font-size: 2em;
+                font-weight: bold;
+                margin-bottom: 1rem;
+            }
+            .scoring-system_kill_kills p:nth-child(3){
+                font-size: 1.6em;
+                color: rgba(255, 255, 255, 0.363);
+            }
+            
+        }
+        .scoring-system_kill_exemplo{
+            background-color: #0A1226;
+            border: 1px solid #132F7D;
+            padding: 2rem;
+            border-radius: 2rem;
+            margin-top: 2rem;
+        }
+        .scoring-system_kill_exemplo  h2{
+            color: #60A5FA;
+            font-size: 2em;
+            font-weight: bolder;
+        }
+        .scoring-system_kill_exemplo p:nth-child(2), .scoring-system_kill_exemplo p:nth-child(3){
+            color: rgba(255, 255, 255, 0.356);
+            font-size: 1.6em;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+        }
+        .scoring-system_kill_exemplo p:nth-child(2) > span, .scoring-system_kill_exemplo p:nth-child(3)>span{
+            color: white;
+            font-weight: bold;
+            font-size: 1.6rem;
+        }
+        .scoring-system_kill_exemplo p:nth-child(4){
+            color: #60A5FA;
+            border-top: 1px solid #60a5fa6e;
+            font-size: 1.8em;
+            margin-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        .scoring-system_kill_exemplo p:nth-child(4) > span{
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    }
+    
+
+
+    //selecionar as seasons
+    .container_controls {
+        margin-bottom: 3rem;
+
+        .select_group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            margin-top: 2rem;
+        }
+        .container_title {
+            color: #9CA3AF;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 0.1rem;
+        }
+        .container_select {
+            background-color: #2563EB;
+            border: none;
+            color: white;
+            font-size: 1.4rem;
+            font-weight: bold;
+            padding: 1.2rem 2rem;
+            border-radius: 0.6rem;
+            cursor: pointer;
+            outline: none;
+            width: 25rem;
+        }
+
+    }
+
+    /* --- TABELA --- */
+    .table_wrapper {
+        background-color: #0F172A;
+        border-radius: 1.5rem;
+        overflow: hidden;
+        /* Faz os cantos arredondados cortarem a tabela */
+        border: 1px solid #1E293B;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.table_header {
+    background-color: #1E40AF;
+    text-align: center;
+    padding: 2rem;
+}
+
+.table_header h2 {
+    font-size: 2.2rem;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.table_header span {
+    display: block;
+    color: #93C5FD;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+.container_table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.container_table thead {
+    background-color: #0B1121;
+    color: #64748B;
+}
+
+.container_table th {
+    padding: 1.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.equipe_th {
+    text-align: left !important;
+}
+
+.container_table tbody tr {
+    border-bottom: 1px solid #1E293B;
+    background-color: #020617;
+    transition: 0.2s;
+}
+
+.container_table tbody tr:hover {
+    background-color: #0F172A;
+    /* Efeito hover sutil */
+}
+
+/* Colunas (Larguras) */
+.container_table th:nth-child(1),
+.container_table td:nth-child(1) {
+    width: 10%;
+}
+
+// .container_table th:nth-child(2),
+// .container_table td:nth-child(2) {
+//     width: 40%;
+// }
+
+.container_table th:nth-child(3),
+.container_table td:nth-child(3) {
+    width: 10%;
+}
+
+.container_table th:nth-child(4),
+.container_table td:nth-child(4) {
+    width: 10%;
+}
+
+.container_table th:nth-child(5),
+.container_table td:nth-child(5) {
+    width: 15%;
+}
+
+.container_table th:nth-child(6),
+.container_table td:nth-child(6) {
+    width: 15%;
+}
+
+.container_table td {
+    padding: 1.5rem 1rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+/* Posição (Cores dinâmicas para o Top 3) */
+.posicao p {
+    background-color: #3B82F6;
+    /* Padrão (Azul) */
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.8rem;
+    color: white;
+    font-weight: bold;
+}
+
+.container_table tbody tr:nth-child(1) .posicao p {
+    background-color: #EAB308;
+}
+
+/* 1º Ouro */
+.container_table tbody tr:nth-child(2) .posicao p {
+    background-color: #9CA3AF;
+}
+
+/* 2º Prata */
+.container_table tbody tr:nth-child(3) .posicao p {
+    background-color: #EA580C;
+}
+
+/* 3º Bronze */
+
+/* Equipe */
+.equipe {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: left !important;
+    font-weight: bold;
+    color: white;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.equipe_logo {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Outras Colunas */
+.quedas {
+    color: #9CA3AF;
+}
+
+.abates {
+    color: #4ADE80;
+    font-weight: bold;
+}
+
+/* Booyah (Círculo roxo) */
+.vitoria p{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    /* Faz ficar redondo */
+    color: white;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.booay p{
+    background: #C026D3;
+}
+.pts {
+    color: #60A5FA;
+    font-size: 1.8em !important;
+}
+
+
+
+/* --- TOP KILLS SECTION --- */
+.top_kills_wrapper {
+    margin-top: 5rem;
+    background-color: #0f172a;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    border: 1px solid #1e293b;
+}
+
+.top_kills_header {
+    background-color: #166534;
+    /* Verde da imagem */
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.top_kills_header h2 {
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.top_kills_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 colunas como na imagem */
+    gap: 2rem;
+    padding: 3rem 2rem;
+    background-color: #020617;
+}
+
+/* Estilo Individual do Card */
+.kill_card {
+    background-color: #0b111e;
+    border: 2px solid #1e293b;
+    border-radius: 1.2rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.kill_card:hover {
+    transform: translateY(-5px);
+    border-color: #3b82f6;
+}
+
+/* Badges de Rank (Círculos) */
+.badge {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #2563eb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    position: absolute;
+    top: -1.5rem;
+    left: 1rem;
+    border: 3px solid #020617;
+}
+
+/* Cores específicas para o Top 3 */
+.rank-1 {
+    border-color: #eab308;
+}
+
+.rank-1 .badge {
+    background-color: #eab308;
+}
+
+.rank-2 {
+    border-color: #9ca3af;
+}
+
+.rank-2 .badge {
+    background-color: #9ca3af;
+}
+
+.rank-3 {
+    border-color: #ea580c;
+}
+
+.rank-3 .badge {
+    background-color: #ea580c;
+}
+
+/* Informações do Jogador */
+.player_info {
+    flex-grow: 1;
+    margin-left: 1rem;
+}
+
+.player_info h4 {
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.player_info p {
+    font-size: 1.1rem;
+    color: #9ca3af;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Stats de Kills na Direita */
+.kill_stats {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.kill_stats .lbl {
+    font-size: 1rem;
+    color: #9ca3af;
+    font-weight: bold;
+}
+
+.kill_stats .num {
+    font-size: 2.8rem;
+    color: #4ade80;
+    /* Verde neon dos números */
+    font-weight: 900;
+    line-height: 1;
+}
+
+
+
+.footer{
+    background: linear-gradient(to right, #0A0D16, rgba(0, 0, 0, 0.63));
+    padding: 4rem 2rem;
+    border-top: 2px solid #13234F;
+    text-align: center;
+}
+
+.footer p:nth-child(1){
+    color: #93C5FD;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.footer a:nth-child(1){
+    color: white;
+    text-align: center;
+    font-size: 1.8em;
+    background: linear-gradient(to right, #db2777, #9333ea);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    display: inline-block;
+}
+
+.footer a:nth-child(1) {
+    color: white;
+    font-size: 1.8em;
+    background: linear-gradient(to right, #db2777, #9333ea);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+}
+.footer a:nth-child(2) {
+    color: white;
+    font-size: 1.8em;
+    background-color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+}
+.footer a:nth-child(3) {
+    color: white;
+    font-size: 1.8em;
+    background-color: #2BD46A;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+}
+.footer a:hover{
+    transform: scale(1.1);
+}
+.links{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.copyright{
+    font-size: 1.4em;
+    color: #565B68;
+    margin-top: 2rem;
+}
+/* Responsividade: Se a tela for pequena, vira 1 coluna */
+@media (max-width: 900px) {
+    .top_kills_grid {
+        grid-template-columns: 1fr;
+    }
+    .scoring-system{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
