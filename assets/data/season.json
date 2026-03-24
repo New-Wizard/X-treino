@@ -69,7 +69,16 @@
             
         ]
     },
-    "season 5": {
+    "season5": {
+      "data": "23/11/2023",
+      "equipes":[
+            { "equipe": "", "quedas": 5, "abates": 1, "booyah": 1, "pts": 1}
+            
+            
+        ]
+  
+    },
+    "season 6": {
   "data": "23/11/2023",
   "equipes": [
     {
@@ -134,7 +143,7 @@
       ]
     }
   ]
-}
+    }
             
             
         

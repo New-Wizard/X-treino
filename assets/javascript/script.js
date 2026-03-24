@@ -29,7 +29,7 @@
     const mudarSeason = {
         start() {
             const select = document.querySelector(".container_select")
-
+            
             mudarSeason.carregarAutomatico(select.value)
 
 

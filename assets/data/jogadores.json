@@ -242,6 +242,74 @@
 
       
     ]
+  },
+
+  "season5":{
+    "data": "23/11/2023",
+    "jogadores": [
+
+      { "jogador": "Sw igk9", "kill": 20, "equipe": "Seahawks" },
+      { "jogador": "Sw nk7", "kill": 13, "equipe": "Seahawks" },
+      { "jogador": "Rxg Souza", "kill": 11, "equipe": "Seahawks" },
+      { "jogador": "Rx myamura", "kill": 13, "equipe": "Seahawks" },
+
+      { "jogador": "Lord t soca", "kill": 14, "equipe": "Team Fluxo" },
+      { "jogador": "Treme não ", "kill": 8, "equipe": "Team Fluxo" },
+      { "jogador": "Alan", "kill": 9, "equipe": "Team Fluxo" },
+      { "jogador": "B2k r4am1v2", "kill": 25, "equipe": "Team Fluxo" },
+
+      { "jogador": "Lk atirador", "kill": 3, "equipe": "LK 01" },
+      { "jogador": "Lk duzzin", "kill": 12, "equipe": "LK 01"},
+      { "jogador": "Lk tira loko", "kill": 2, "equipe": "LK 01" },
+      { "jogador": "Luca5244 Lk ", "kill": 1, "equipe": "LK 01" },
+      { "jogador": "LK Bruniix", "kill": 2, "equipe": "LK 01" },
+      { "jogador": "卂ㄥ丨千ㄥㄖ尺", "kill": 2, "equipe": "LK 01" },
+
+      { "jogador": "Lk fantasma", "kill": 5, "equipe": "LK 02" },
+      { "jogador": "Lk sabotage", "kill": 4, "equipe": "LK 02" },
+      { "jogador": "Lk general", "kill": 0, "equipe": "LK 02" },
+
+      { "jogador": "Hs10dnx", "kill": 8, "equipe": "Not Móbile" },
+      { "jogador": "Anthony bh", "kill": 10, "equipe": "Not Móbile" },
+      { "jogador": "Tm boteco", "kill": 12, "equipe": "Not Móbile" },
+      { "jogador": "Souza xit", "kill": 4, "equipe": "Not Móbile" },
+
+      { "jogador": "Tripa seca ", "kill": 3, "equipe": "Ghost Raid" },
+      { "jogador": "Rd ruannm 7", "kill": 4, "equipe": "Ghost Raid" },
+      { "jogador": "Skyard", "kill": 11, "equipe": "Ghost Raid" },
+      { "jogador": "Godpsico x", "kill": 16, "equipe": "Ghost Raid" },
+
+      { "jogador": "Fontoura 021", "kill": 2, "equipe": "LK 03" },
+      { "jogador": "Lk novinho", "kill": 7, "equipe": "LK 03" },
+      { "jogador": "Lk rafa", "kill": 2, "equipe": "LK 03" },
+      { "jogador": "Lk Biel", "kill": 3, "equipe": "LK 03" },
+
+      { "jogador": "BSK caos", "kill": 3, "equipe": "Beserkers" },
+      { "jogador": "BSK drago", "kill": 9, "equipe": "Beserkers" },
+      { "jogador": "BSK goat", "kill": 5, "equipe": "Beserkers" },
+      { "jogador": "BSK lwzin", "kill": 7, "equipe": "Beserkers" },
+
+      { "jogador": "Lzx David", "kill": 3, "equipe": "Hazard FM7" },
+      { "jogador": "Fm7 noxx.mvp", "kill": 1, "equipe": "Hazard FM7" },
+      { "jogador": "Fm7 Santos 7x", "kill": 0, "equipe": "Hazard FM7" },
+
+      { "jogador": "L7 osiris", "kill": 1, "equipe": "L7 Warrioz" },
+      { "jogador": "Móbile x rush", "kill": 1, "equipe": "L7 Warrioz" },
+      { "jogador": "Rzt soca ", "kill": 0, "equipe": "L7 Warrioz" },
+      { "jogador": "@jdzin33", "kill": 2, "equipe": "L7 Warrioz" },
+
+      { "jogador": "01 vini", "kill": 0, "equipe": "Os Goats" },
+      { "jogador": "Mf Dino ", "kill": 2, "equipe": "Os Goats" },
+      { "jogador": "Dragon sx", "kill": 4, "equipe": "Os Goats" },
+      { "jogador": "Lobin gf", "kill": 0, "equipe": "Os Goats" },
+      { "jogador": "7nxz", "kill": 0, "equipe": "Os Goats" },
+
+      { "jogador": "GHOST", "kill": 6, "equipe": "Beserkers 2.0" },
+      { "jogador": "Samuel", "kill": 4, "equipe": "Beserkers 2.0" },
+      { "jogador": "BSK Zeus ", "kill": 12, "equipe": "Beserkers 2.0" },
+      { "jogador": "BSK kirito", "kill": 4, "equipe": "Beserkers 2.0" }
+      
+    ]
   }
   
 }
