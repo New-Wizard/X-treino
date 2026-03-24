@@ -78,37 +78,37 @@
         ]
   
     },
-    "season 6": {
-  "data": "23/11/2023",
-  "equipes": [
-    {
-      "equipe": "Hazard FM7",
-      "detalhes": [
+    "season-6": {
+      "data": "23/11/2023",
+      "equipes": [
         {
-          "queda": 1,
-          "kills": 5,
-          "posicao": 2
-        },
-        {
-          "queda": 2,
-          "kills": 3,
-          "posicao": 5
-        },
-        {
-          "queda": 3,
-          "kills": 7,
-          "posicao": 1
-        },
-        {
-          "queda": 4,
-          "kills": 2,
-          "posicao": 8
-        },
-        {
-          "queda": 5,
-          "kills": 4,
-          "posicao": 3
-        }
+          "equipe": "Hazard FM7",
+          "detalhes": [
+            {
+              "queda": 1,
+              "kills": 5,
+              "posicao": 2
+            },
+            {
+             "queda": 2,
+             "kills": 3,
+             "posicao": 5
+            },
+            {
+              "queda": 3,
+              "kills": 7,
+              "posicao": 1
+            },
+            {
+              "queda": 4,
+              "kills": 2,
+              "posicao": 8
+            },
+            {
+              "queda": 5,
+              "kills": 4,
+              "posicao": 3
+            }
       ]
     },
 

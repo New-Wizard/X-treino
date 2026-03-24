@@ -21,8 +21,9 @@
     iniciarApp()
     
     const pegarDados = {
-        start(seasonSelecionadaaa) {
-            const a = seasonSelecionadaaa
+        start(seasonSelecionada) {
+            const b = seasonSelecionada
+            const a = season.b
             console.log(a)
         }
     }
