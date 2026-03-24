@@ -72,13 +72,25 @@
     "season5": {
       "data": "23/11/2023",
       "equipes":[
-            { "equipe": "", "quedas": 5, "abates": 1, "booyah": 1, "pts": 1}
+            { "equipe": "Seahawks", "quedas": 5, "abates": 60, "booyah": 2, "pts": 124},
+            { "equipe": "Team Fluxo", "quedas": 5, "abates": 56, "booyah": 1, "pts": 86},
+            { "equipe": "Not Móbile", "quedas": 5, "abates": 34, "booyah": 0, "pts": 68},
+            { "equipe": "Ghost Raid", "quedas": 5, "abates": 34, "booyah": 2, "pts": 64},
+            { "equipe": "Beserkers", "quedas": 5, "abates": 23, "booyah": 0, "pts": 50},
+            { "equipe": "LK 01", "quedas": 5, "abates": 26, "booyah": 0, "pts": 49},
+            { "equipe": "Beserkers 2.0", "quedas": 5, "abates": 26, "booyah": 0, "pts": 48},
+            { "equipe": "LK 03", "quedas": 5, "abates": 14, "booyah": 0, "pts": 34},
+            { "equipe": "LK 02", "quedas": 5, "abates": 9, "booyah": 0, "pts": 25},
+            { "equipe": "Os Goats", "quedas": 5, "abates": 6, "booyah": 0, "pts": 19},
+            { "equipe": "Hazard FM7", "quedas": 5, "abates": 4, "booyah": 0, "pts": 11},
+            { "equipe": "L7 Warriorz", "quedas": 5, "abates": 1, "booyah": 5, "pts": 8}
+            
             
             
         ]
   
     },
-    "season-6": {
+    "season_6": {
       "data": "23/11/2023",
       "equipes": [
         {

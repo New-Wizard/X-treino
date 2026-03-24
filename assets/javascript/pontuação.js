@@ -22,9 +22,7 @@
     
     const pegarDados = {
         start(seasonSelecionada) {
-            const b = seasonSelecionada
-            const a = season.b
-            console.log(a)
+            console.log(season[seasonSelecionada])
         }
     }
 
