@@ -1,12 +1,12 @@
-console.log("ola")
+
    
-    import { Equipe } from './models/Usuario.js';
+    import { Equipe } from './script.js';
     
 
     //pega os dados do json
     let season
     async function carregarDados() {
-        const resposta = await fetch("assets/data/season.json")
+        const resposta = await fetch("assets/data/season2.0.json")
         season = await resposta.json()
         
     }
@@ -23,12 +23,16 @@ console.log("ola")
     const pegarDados = {
         start(seasonSelecionada) {
             //aq da um return nessa função com os dados
-            return this.pegarDadosDasEquipes(season[seasonSelecionada])
+            return this.pegarDadosDasEquipes(season[seasonSelecionada], seasonSelecionada)
         },
-        pegarDadosDasEquipes(seasonSelecionada) {
+        pegarDadosDasEquipes(seasonSelecionada, nomeDaSeason) {
+            
             //aq ira pegar o arrays dos objs equipes
             const arrayEquipes = seasonSelecionada.equipes
             const resultadoFinal = []
+            const data = seasonSelecionada.data
+            const nomeSeason = nomeDaSeason
+    
 
             arrayEquipes.forEach(infoEquipes => {
                 //serve para ajudar ao somatorio 
@@ -45,7 +49,7 @@ console.log("ola")
                     //aq pega todos os dados das quedas,kills,posição
                     const numeroDaQueda = objQuedas.queda
                     const numeroDaKills = objQuedas.kills
-                    const numeroDaPosição = objQuedas.posicao  
+                    const numeroDaPosição = objQuedas.posicao 
                     //seria aq os dados individuais
                     if (numeroDaPosição == 1) {
                         booyah++
@@ -59,9 +63,11 @@ console.log("ola")
                 resultadoFinal.push({
                     equipe: nomeEquipe,
                     quedas: 5,
-                    kills: kill,
+                    abate: kill,
                     booyah: booyah,
                     pts: equipePts,
+                    data: data,
+                    nomeSeason: nomeSeason
                 })
                 
             });
@@ -121,12 +127,11 @@ console.log("ola")
 
                 //são as seasons que estão do json
                 const seasonJson = season
-
                 //pega todos os seasons um por um
                 for (let seasons in seasonJson){
-
                     //se as seasons do json for igual a que foi selecionada faz isso
                     if (seasons == seasonSelecionada) {
+                        
                         const dados = pegarDados.start(seasonSelecionada)
                         this.carregarTabela(dados)
                     }
@@ -134,8 +139,16 @@ console.log("ola")
                 }
             })
         },
-        carregarTabela(dados) {
-            console.log(dados)
+        carregarTabela(arrayEquipes) {
+            // const tbody = document.querySelector("#tbody")
+            // tbody.innerHTML = "" 
+            arrayEquipes.sort((a, b) => b.pts - a.pts)
+            arrayEquipes.forEach((equipe, index) => {
+                equipe.posicao = index + 1
+
+                new Equipe(equipe.posicao, equipe.equipe, equipe.quedas, equipe.abate, equipe.booyah, equipe.pts, equipe.data, equipe.nomeSeason)
+            })
+            // new Equipe("1", "detonadores", 1,2,3,4, "01/01/2000", "season6")
         }
     }
 

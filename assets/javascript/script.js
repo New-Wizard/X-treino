@@ -137,14 +137,17 @@
                 this.pts = pts
                 this.data = data
                 this.season = season
+                console.log(abate)
                 const tbody = document.querySelector("#tbody")
                 this.criarTr(tbody)
                 this.mudarData(data) 
                 this.mudarNomeSeason(season)
+                
             }
             criarTr(tbody) {
                 const createTr = document.createElement("tr")
                 const tr = tbody.appendChild(createTr)
+                // console.log(tbody)
                 this.criarPosiçãoTd(tr)
                 this.criarEquipeTd(tr)
                 this.criarQuedasTd(tr)
