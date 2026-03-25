@@ -1,5 +1,5 @@
 
-(function () {
+
     
     // { "jogador": "", "kill": , "equipe": "" },
     // { "equipe": "", "quedas": 5, "abates": , "booyah": , "pts": },
@@ -125,9 +125,9 @@
         }
         
     }
-
-
-    class Equipe{
+    
+    
+    export class Equipe{
             constructor(posição, equipe, quedas, abate, booyah, pts, data, season) {
                 this.posição = posição
                 this.equipe = equipe
@@ -282,4 +282,3 @@
 
 
 
-})()
