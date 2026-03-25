@@ -10,8 +10,6 @@
         season = await resposta.json()
         
     }
-
-
     //o js para e espera pegar todos os dados no json
     async function iniciarApp() {
         await carregarDados()
@@ -20,10 +18,80 @@
     }
     iniciarApp()
     
+
+    //aq ele pega e armazena todos os dados do json
     const pegarDados = {
         start(seasonSelecionada) {
-            console.log(season[seasonSelecionada])
+            //aq da um return nessa função com os dados
+            return this.pegarDadosDasEquipes(season[seasonSelecionada])
+        },
+        pegarDadosDasEquipes(seasonSelecionada) {
+            //aq ira pegar o arrays dos objs equipes
+            const arrayEquipes = seasonSelecionada.equipes
+            const resultadoFinal = []
+
+            arrayEquipes.forEach(infoEquipes => {
+                //serve para ajudar ao somatorio 
+                let equipePts = 0
+                let kill = 0
+                let posição = 0
+                let booyah = 0
+
+                //aq mostra os nomes das equipes
+                const nomeEquipe = infoEquipes.equipe
+            
+                const arrayQuedas = infoEquipes.detalhes
+                arrayQuedas.forEach(objQuedas => {
+                    //aq pega todos os dados das quedas,kills,posição
+                    const numeroDaQueda = objQuedas.queda
+                    const numeroDaKills = objQuedas.kills
+                    const numeroDaPosição = objQuedas.posicao  
+                    //seria aq os dados individuais
+                    if (numeroDaPosição == 1) {
+                        booyah++
+                    }
+                    //aq soma todas as kills e os pts de posição e armazena
+                    kill = this.somarPontosKill(kill, numeroDaKills)
+                    posição = this.somaPontosPosição(posição, numeroDaPosição)
+                })
+                equipePts = kill + posição
+                
+                resultadoFinal.push({
+                    equipe: nomeEquipe,
+                    quedas: 5,
+                    kills: kill,
+                    booyah: booyah,
+                    pts: equipePts,
+                })
+                
+            });
+            
+            return resultadoFinal
+            
+            
+        },
+        //aq soma as kills
+        somarPontosKill(kill, numeroDaKills) {
+            let pontuaçãoKill = kill + numeroDaKills
+            return pontuaçãoKill
+        },
+        //ira somar os pontos de posição
+        somaPontosPosição(posição, numeroDaPosição) {
+            //essa variavel ir armazenar os pts por queda
+            let pontoGanhoPorPartida = 0
+            
+            //ira percorrer os objs dentro do array classificação
+            classificação.forEach(objClassificaçãoPosição => {
+                //se o numero da posição na queda for igual ao numero de posição da lista faça
+                if (objClassificaçãoPosição.posição == numeroDaPosição) {
+                    //ira somar os pts feito na partida
+                    pontoGanhoPorPartida = objClassificaçãoPosição.pts
+                }
+            })
+            return pontoGanhoPorPartida + posição
+            
         }
+
     }
 
     const classificação = [
@@ -59,31 +127,17 @@
 
                     //se as seasons do json for igual a que foi selecionada faz isso
                     if (seasons == seasonSelecionada) {
-                        pegarDados.start(seasonSelecionada)
-                        this.carregarTabela()
+                        const dados = pegarDados.start(seasonSelecionada)
+                        this.carregarTabela(dados)
                     }
 
                 }
             })
         },
-        carregarTabela() {
-            
+        carregarTabela(dados) {
+            console.log(dados)
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
