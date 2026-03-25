@@ -1,6 +1,6 @@
-(function () {
+console.log("ola")
    
-
+    import { Equipe } from './models/Usuario.js';
     
 
     //pega os dados do json
@@ -142,4 +142,3 @@
 
 
     
-})()
