@@ -1,0 +1,71 @@
+{
+    "season6":{
+    "data": "25/11/2023",
+    "jogadores": [
+
+      { "jogador": "Rd mitsuki7", "kill":11, "equipe": "Os sem teto " },
+      { "jogador": "Ita mpking9", "kill": 1, "equipe": "Os sem teto " },
+      { "jogador": "Obg-ght-mete", "kill": 0, "equipe": "Os sem teto " },
+      { "jogador": "Oby-ght-cr", "kill": 1, "equipe": "Os sem teto " },
+
+      { "jogador": "Lord t soca ", "kill": 8, "equipe": "Team Fluxo" },
+      { "jogador": "B2k r4am1v2", "kill": 11, "equipe": "Team Fluxo" },
+      { "jogador": "Treme não ", "kill": 10, "equipe": "Team Fluxo" },
+      { "jogador": "Hz 07", "kill": 11, "equipe": "Team Fluxo" },
+
+      { "jogador": "Fx sasuke", "kill": 5, "equipe": "Team Fluxo 2" },
+      { "jogador": "Freestyle ", "kill": 2, "equipe": "Team Fluxo 2" },
+      { "jogador": "God Tm MADARA", "kill": 3, "equipe": "Team Fluxo 2" },
+      { "jogador": "Fx itachi", "kill": 4, "equipe": "Team Fluxo 2" },
+      { "jogador": "CDZ Camist", "kill": 2, "equipe": "Team Fluxo 2" },
+
+      { "jogador": "Sw ingrid9", "kill": 10, "equipe": "GHOST Girl" },
+      { "jogador": "Sw mística7", "kill": 12, "equipe": "GHOST Girl" },
+      { "jogador": "Sw hori", "kill": 9, "equipe": "GHOST Girl" },
+      { "jogador": "Astrid 69", "kill": 10, "equipe": "GHOST Girl" },
+
+      { "jogador": "Sw myamura", "kill": 11, "equipe": "Destroyers" },
+      { "jogador": "Sw dh7", "kill": 14, "equipe": "Destroyers" },
+      { "jogador": "Sw místico ", "kill": 14, "equipe": "Destroyers" },
+      { "jogador": "Sw igk9", "kill": 21, "equipe": "Destroyers" },
+
+      { "jogador": "Rd venox ", "kill": 3, "equipe": "Night Raid" },
+      { "jogador": "Eqp covarde", "kill": 11, "equipe": "Night Raid" },
+      { "jogador": "Skyhard", "kill": 10, "equipe": "Night Raid" },
+      { "jogador": "Tripa seca", "kill": 6, "equipe": "Night Raid" },
+
+      { "jogador": "Hs 10 DNx", "kill": 1, "equipe": "Not Móbile " },
+      { "jogador": "A7 Martins", "kill": 1, "equipe": "Not Móbile " },
+      { "jogador": "I am", "kill": 0, "equipe": "Not Móbile " },
+      { "jogador": "Dudu600x0", "kill": 0, "equipe": "Not Móbile " },
+
+      { "jogador": "BSK lwzin", "kill": 7, "equipe": "BESERKERS " },
+      { "jogador": "BSK drago 09", "kill": 2, "equipe": "BESERKERS " },
+      { "jogador": "Anibartecortes", "kill": 4, "equipe": "BESERKERS " },
+      { "jogador": "BSK Goat", "kill": 3, "equipe": "BESERKERS " },
+
+      { "jogador": "BSK kirito ", "kill": 4, "equipe": "BESERKERS 2.0" },
+      { "jogador": "GHOST", "kill": 1, "equipe": "BESERKERS 2.0" },
+      { "jogador": "BSK Zeus", "kill": 2, "equipe": "BESERKERS 2.0" },
+      { "jogador": "YagoD'trevas", "kill": 1, "equipe": "BESERKERS 2.0" },
+      { "jogador": "bot.X", "kill": 2, "equipe": "BESERKERS 2.0" },
+
+      { "jogador": "Caçador ", "kill": 7, "equipe": "Lk 01 " },
+      { "jogador": "Lk atirador", "kill": 24, "equipe": "Lk 01 " },
+      { "jogador": "Lk fantasma", "kill": 9, "equipe": "Lk 01 " },
+      { "jogador": "Lk duzinn", "kill": 8, "equipe": "Lk 01 " },
+
+      { "jogador": "Pedro Lk", "kill": 10, "equipe": "Lk 02 " },
+      { "jogador": "Lk Biel ", "kill": 13, "equipe": "Lk 02 " },
+      { "jogador": "Lk general", "kill": 7, "equipe": "Lk 02 " },
+      { "jogador": "Lk gordão ", "kill": 5, "equipe": "Lk 02 " },
+      
+      { "jogador": "Ódio ", "kill": 9, "equipe": "De Manaus" },
+      { "jogador": "Japonesa", "kill": 19, "equipe": "De Manaus" },
+      { "jogador": "Asta noelle ", "kill": 6, "equipe": "De Manaus" },
+      { "jogador": "Dm stlye", "kill": 19, "equipe": "De Manaus" },
+      
+      { "jogador": "", "kill": 0, "equipe": "" }
+    ]
+  }
+}

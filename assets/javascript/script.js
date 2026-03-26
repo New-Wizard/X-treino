@@ -1,3 +1,5 @@
+(function () {
+    
 
 
     
@@ -40,6 +42,13 @@
             })
         },
         carregarSeason(nomeSeason) {
+            // 1. Verificamos se a season existe no objeto 'seasons' deste arquivo
+            // Se não existir (como a Season 6), o script para aqui e não limpa nada!
+            if (!seasons[nomeSeason] && nomeSeason !== "selecioneSeason") {
+                return; 
+            }
+
+            // 2. Se chegou aqui, é uma season válida para este script (1 a 5)
             if (nomeSeason != "selecioneSeason") {
                 const tbody = document.querySelector("#tbody")
                 tbody.innerHTML = ""
@@ -48,20 +57,41 @@
             for (let season in seasons) {
                 if (nomeSeason == season) {
                     const equipes = seasons[nomeSeason].equipes
-                    
                     const data = seasons[nomeSeason].data
-                    
-                    
+            
                     equipes.forEach((valor, index) => {
-
                         new Equipe(index + 1, valor.equipe, valor.quedas, valor.abates, valor.booyah, valor.pts, data, nomeSeason)
-
                     });
-
                 }
             }
-        },
+},
+        // carregarSeason(nomeSeason) {
+        //     if (nomeSeason != "selecioneSeason") {
+        //         const tbody = document.querySelector("#tbody")
+        //         tbody.innerHTML = ""
+        //     }
+
+        //     for (let season in seasons) {
+        //         if (nomeSeason == season) {
+        //             const equipes = seasons[nomeSeason].equipes
+                    
+        //             const data = seasons[nomeSeason].data
+                    
+                    
+        //             equipes.forEach((valor, index) => {
+
+        //                 new Equipe(index + 1, valor.equipe, valor.quedas, valor.abates, valor.booyah, valor.pts, data, nomeSeason)
+
+        //             });
+
+        //         }
+        //     }
+        // },
         carregarRankJogador(nomeSeason) {
+
+            if (!seasons[nomeSeason] && nomeSeason !== "selecioneSeason") {
+                return; 
+            }
             if (nomeSeason != "selecioneSeason") {
                 
                 const top_kills_grid = document.querySelector(".top_kills_grid")
@@ -72,7 +102,6 @@
             for (let season in jogadores) {
                 if (nomeSeason == season) {
                     const objJogadores = jogadores[nomeSeason].jogadores
-
                     const equipes = seasons[nomeSeason].equipes
                     const posicaoEquipe = {}
                     equipes.forEach((time, index) => {
@@ -127,7 +156,7 @@
     }
     
     
-    export class Equipe{
+    class Equipe{
             constructor(posição, equipe, quedas, abate, booyah, pts, data, season) {
                 this.posição = posição
                 this.equipe = equipe
@@ -137,7 +166,6 @@
                 this.pts = pts
                 this.data = data
                 this.season = season
-                console.log(abate)
                 const tbody = document.querySelector("#tbody")
                 this.criarTr(tbody)
                 this.mudarData(data) 
@@ -279,7 +307,7 @@
         }
     }
 
-
+})()
     
    
 
