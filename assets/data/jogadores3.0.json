@@ -1,0 +1,17 @@
+{
+    "season6": {
+        "data": "25/11/2023",
+        "equipes": {
+            "Trem Bala": {
+                "Rd mitsuki7": [0, 0, 0, 0, 0],
+                "Brenno": [0, 0, 0, 0, 0],
+                "Jogador3": [0, 0, 0, 0, 0],
+                "Jogador4": [0, 0, 0, 0, 0]
+            },
+            "Outra Equipe": {
+                "Jogador A": [0, 0, 0, 0, 0],
+                "Jogador B": [0, 0, 0, 0, 0]
+            }
+        }
+    }
+}

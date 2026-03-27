@@ -148,7 +148,7 @@
 //             arrayEquipes.forEach((equipe, index) => {
 //                 equipe.posicao = index + 1
 
-//                 new Eequipe(equipe.posicao, equipe.equipe, equipe.quedas, equipe.abate, equipe.booyah, equipe.pts, equipe.data, equipe.nomeSeason)
+//                 criarTabela.start(equipe.posicao, equipe.equipe, equipe.quedas, equipe.abate, equipe.booyah, equipe.pts, equipe.data, equipe.nomeSeason)
 //             })
 //             // new Equipe("1", "detonadores", 1,2,3,4, "01/01/2000", "season6")
 //         }
@@ -156,8 +156,8 @@
 
 
 
-//      class Eequipe{
-//             constructor(posição, equipe, quedas, abate, booyah, pts, data, season) {
+//     const criarTabela = {
+//             start(posição, equipe, quedas, abate, booyah, pts, data, season){
 //                 this.posição = posição
 //                 this.equipe = equipe
 //                 this.quedas = quedas
@@ -170,21 +170,18 @@
 //                 this.criarTr(tbody)
 //                 this.mudarData(data)
 //                 this.mudarNomeSeason(season)
-                
-//             }
+//             },
 //             criarTr(tbody) {
 //                 const createTr = document.createElement("tr")
 //                 const tr = tbody.appendChild(createTr)
-                
-//                 // tbody.appendChild(tr)
-                
+            
 //                 this.criarPosiçãoTd(tr)
 //                 this.criarEquipeTd(tr)
 //                 this.criarQuedasTd(tr)
 //                 this.criarAbatesTd(tr)
 //                 this.criarBooyahTd(tr)
 //                 this.criarPtsTd(tr)
-//             }
+//             },
 //             criarPosiçãoTd(tr) {
 //                 const td = document.createElement("td")
 //                 const p = document.createElement("p")
@@ -192,25 +189,25 @@
 //                 tr.appendChild(td)
 //                 td.appendChild(p)
 //                 p.innerHTML = `${this.posição}`
-//             }
+//             },
 //             criarEquipeTd(tr) {
 //                 const td = document.createElement("td")
 //                 td.setAttribute("class", "equipe")
 //                 tr.appendChild(td)
 //                 td.innerHTML = `${this.equipe}`
-//             }
+//             },
 //             criarQuedasTd(tr) {
 //                 const td = document.createElement("td")
 //                 td.setAttribute("class", "quedas")
 //                 tr.appendChild(td)
 //                 td.innerHTML = `${this.quedas}`
-//             }
+//             },
 //             criarAbatesTd(tr) {
 //                 const td = document.createElement("td")
 //                 td.setAttribute("class", "abates")
 //                 tr.appendChild(td)
 //                 td.innerHTML = `${this.abate}`
-//             }
+//             },
 //             criarBooyahTd(tr) {
 //                 const td = document.createElement("td")
 //                 const p = document.createElement("p")
@@ -222,7 +219,7 @@
 //                 tr.appendChild(td)
 //                 td.appendChild(p)
 //                 p.innerHTML = `${this.booyah}`
-//             }
+//             },
 //             criarPtsTd(tr) {
 //                 const td = document.createElement("td")
 //                 const strong = document.createElement("strong")
@@ -230,11 +227,11 @@
 //                 tr.appendChild(td)
 //                 td.appendChild(strong)
 //                 strong.innerHTML = `${this.pts}`
-//             }
+//             },
 //             mudarData(data) {
 //                 const spanData = document.querySelector("#data")
 //                 spanData.innerHTML = `${data}`
-//             }
+//             },
 //             mudarNomeSeason(nomeSeason) {
 //                 const season = document.querySelector("#rankingSeason")
 //                 season.innerHTML = `SEASON ${nomeSeason.slice(-1)}`

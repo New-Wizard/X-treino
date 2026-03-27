@@ -65,14 +65,6 @@ body {
     }
 }
 
-
-
-
-
-
-
-
-
 /* --- MAIN CONTAINER --- */
 .container {
     padding: 4rem 2rem;
@@ -217,7 +209,7 @@ body {
             font-weight: bold;
         }
     }
-    
+    //sistema de pontuação
 
 
     //selecionar as seasons
@@ -259,397 +251,389 @@ body {
         overflow: hidden;
         /* Faz os cantos arredondados cortarem a tabela */
         border: 1px solid #1E293B;
+        .table_header {
+            background-color: #1E40AF;
+            text-align: center;
+            padding: 2rem;
+        }
+        .table_header h2 {
+            font-size: 2.2rem;
+            color: white;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+        .table_header span {
+            display: block;
+            color: #93C5FD;
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            font-weight: bold;
+        }
+        .container_table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        .container_table thead {
+            background-color: #0B1121;
+            color: #64748B;
+        }
+        
+        .container_table th {
+            padding: 1.5rem 1rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .equipe_th {
+            text-align: left !important;
+        }
+        
+        .container_table tbody tr {
+            border-bottom: 1px solid #1E293B;
+            background-color: #020617;
+            transition: 0.2s;
+        }
+        
+        .container_table tbody tr:hover {
+            background-color: #0F172A;
+            /* Efeito hover sutil */
+        }
+        
+        /* Colunas (Larguras) */
+        .container_table th:nth-child(1),
+        .container_table td:nth-child(1) {
+            width: 10%;
+        }
+        
+        .container_table th:nth-child(3),
+        .container_table td:nth-child(3) {
+            width: 10%;
+        }
+        
+        .container_table th:nth-child(4),
+        .container_table td:nth-child(4) {
+            width: 10%;
+        }
+        
+        .container_table th:nth-child(5),
+        .container_table td:nth-child(5) {
+            width: 15%;
+        }
+        
+        .container_table th:nth-child(6),
+        .container_table td:nth-child(6) {
+            width: 15%;
+        }
+        
+        .container_table td {
+            padding: 1.5rem 1rem;
+            text-align: center;
+            font-size: 1.4rem;
+        }
+        
+        /* Posição (Cores dinâmicas para o Top 3) */
+        .posicao p {
+            background-color: #3B82F6;
+            /* Padrão (Azul) */
+            width: 3.5rem;
+            height: 3.5rem;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.8rem;
+            color: white;
+            font-weight: bold;
+        }
+    
+        /* 1º Ouro */
+        .container_table tbody tr:nth-child(1) .posicao p {
+            background-color: #EAB308;
+        }
+        
+        /* 2º Prata */
+        .container_table tbody tr:nth-child(2) .posicao p {
+            background-color: #9CA3AF;
+        }
+        
+        /* 3º Bronze */
+        .container_table tbody tr:nth-child(3) .posicao p {
+            background-color: #EA580C;
+        }
+        
+        /* Equipe */
+        .equipe {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            text-align: left !important;
+            font-weight: bold;
+            color: white;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+        }
+        
+        .equipe_logo {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        /* Outras Colunas */
+        .quedas {
+            color: #9CA3AF;
+        }
+        
+        .abates {
+            color: #4ADE80;
+            font-weight: bold;
+        }
+        
+        /* Booyah (Círculo roxo) */
+        .vitoria p{
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            /* Faz ficar redondo */
+            color: white;
+            margin: 0 auto;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .booay p{
+            background: #C026D3;
+        }
+        .pts {
+            color: #60A5FA;
+            font-size: 1.8em !important;
+        }
+
+        //detalhes das partidas
+        .desempenhoDetalhado{
+            background-color: #111726;
+        }
+        .desempenhoDetalhado h2{
+            color: #60A5FA;
+            font-size: 2em;
+        }
+        .desempenhoDetalhado > h2 > span{
+            text-transform: uppercase;
+            font-weight: bolder;
+            margin-bottom: 1rem;
+        }
+        
     }
-    
-    
+    /* --- TABELA-FIM --- */
+
+
+    /* --- TOP KILLS SECTION --- */
+    .top_kills_wrapper {
+        margin-top: 5rem;
+        background-color: #0f172a;
+        border-radius: 1.5rem;
+        overflow: hidden;
+        border: 1px solid #1e293b;
+        .top_kills_header {
+            background-color: #166534;
+            /* Verde da imagem */
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .top_kills_header h2 {
+            font-size: 2rem;
+            color: white;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+        
+        .top_kills_grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* 3 colunas como na imagem */
+            gap: 2rem;
+            padding: 3rem 2rem;
+            background-color: #020617;
+        }
+        
+        /* Estilo Individual do Card */
+        .kill_card {
+            background-color: #0b111e;
+            border: 2px solid #1e293b;
+            border-radius: 1.2rem;
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            position: relative;
+            transition: transform 0.2s;
+        }
+        
+        .kill_card:hover {
+            transform: translateY(-5px);
+            border-color: #3b82f6;
+        }
+        
+        /* Badges de Rank (Círculos) */
+        .badge {
+            width: 3.5rem;
+            height: 3.5rem;
+            background-color: #2563eb;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.4rem;
+            position: absolute;
+            top: -1.5rem;
+            left: 1rem;
+            border: 3px solid #020617;
+        }
+        
+        /* Cores específicas para o Top 3 */
+        .rank-1 {
+            border-color: #eab308;
+        }
+        
+        .rank-1 .badge {
+            background-color: #eab308;
+        }
+        
+        .rank-2 {
+            border-color: #9ca3af;
+        }
+        
+        .rank-2 .badge {
+            background-color: #9ca3af;
+        }
+        
+        .rank-3 {
+            border-color: #ea580c;
+        }
+        
+        .rank-3 .badge {
+            background-color: #ea580c;
+        }
+        
+        /* Informações do Jogador */
+        .player_info {
+            flex-grow: 1;
+            margin-left: 1rem;
+        }
+        
+        .player_info h4 {
+            font-size: 1.8rem;
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+        
+        .player_info p {
+            font-size: 1.1rem;
+            color: #9ca3af;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        /* Stats de Kills na Direita */
+        .kill_stats {
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .kill_stats .lbl {
+            font-size: 1rem;
+            color: #9ca3af;
+            font-weight: bold;
+        }
+        
+        .kill_stats .num {
+            font-size: 2.8rem;
+            color: #4ade80;
+            /* Verde neon dos números */
+            font-weight: 900;
+            line-height: 1;
+        }
+    }
+    /* --- TOP KILLS SECTION --- */
+      
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-.table_header {
-    background-color: #1E40AF;
-    text-align: center;
-    padding: 2rem;
-}
-
-.table_header h2 {
-    font-size: 2.2rem;
-    color: white;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
-.table_header span {
-    display: block;
-    color: #93C5FD;
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-    font-weight: bold;
-}
-
-.container_table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-.container_table thead {
-    background-color: #0B1121;
-    color: #64748B;
-}
-
-.container_table th {
-    padding: 1.5rem 1rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-align: center;
-}
-
-.equipe_th {
-    text-align: left !important;
-}
-
-.container_table tbody tr {
-    border-bottom: 1px solid #1E293B;
-    background-color: #020617;
-    transition: 0.2s;
-}
-
-.container_table tbody tr:hover {
-    background-color: #0F172A;
-    /* Efeito hover sutil */
-}
-
-/* Colunas (Larguras) */
-.container_table th:nth-child(1),
-.container_table td:nth-child(1) {
-    width: 10%;
-}
-
-// .container_table th:nth-child(2),
-// .container_table td:nth-child(2) {
-//     width: 40%;
-// }
-
-.container_table th:nth-child(3),
-.container_table td:nth-child(3) {
-    width: 10%;
-}
-
-.container_table th:nth-child(4),
-.container_table td:nth-child(4) {
-    width: 10%;
-}
-
-.container_table th:nth-child(5),
-.container_table td:nth-child(5) {
-    width: 15%;
-}
-
-.container_table th:nth-child(6),
-.container_table td:nth-child(6) {
-    width: 15%;
-}
-
-.container_table td {
-    padding: 1.5rem 1rem;
-    text-align: center;
-    font-size: 1.4rem;
-}
-
-/* Posição (Cores dinâmicas para o Top 3) */
-.posicao p {
-    background-color: #3B82F6;
-    /* Padrão (Azul) */
-    width: 3.5rem;
-    height: 3.5rem;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0.8rem;
-    color: white;
-    font-weight: bold;
-}
-
-.container_table tbody tr:nth-child(1) .posicao p {
-    background-color: #EAB308;
-}
-
-/* 1º Ouro */
-.container_table tbody tr:nth-child(2) .posicao p {
-    background-color: #9CA3AF;
-}
-
-/* 2º Prata */
-.container_table tbody tr:nth-child(3) .posicao p {
-    background-color: #EA580C;
-}
-
-/* 3º Bronze */
-
-/* Equipe */
-.equipe {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    text-align: left !important;
-    font-weight: bold;
-    color: white;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-}
-
-.equipe_logo {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-/* Outras Colunas */
-.quedas {
-    color: #9CA3AF;
-}
-
-.abates {
-    color: #4ADE80;
-    font-weight: bold;
-}
-
-/* Booyah (Círculo roxo) */
-.vitoria p{
-    width: 3rem;
-    height: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    /* Faz ficar redondo */
-    color: white;
-    margin: 0 auto;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-.booay p{
-    background: #C026D3;
-}
-.pts {
-    color: #60A5FA;
-    font-size: 1.8em !important;
-}
-
-
-
-/* --- TOP KILLS SECTION --- */
-.top_kills_wrapper {
-    margin-top: 5rem;
-    background-color: #0f172a;
-    border-radius: 1.5rem;
-    overflow: hidden;
-    border: 1px solid #1e293b;
-}
-
-.top_kills_header {
-    background-color: #166534;
-    /* Verde da imagem */
-    padding: 1.5rem;
-    text-align: center;
-}
-
-.top_kills_header h2 {
-    font-size: 2rem;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 1px;
-}
-
-.top_kills_grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* 3 colunas como na imagem */
-    gap: 2rem;
-    padding: 3rem 2rem;
-    background-color: #020617;
-}
-
-/* Estilo Individual do Card */
-.kill_card {
-    background-color: #0b111e;
-    border: 2px solid #1e293b;
-    border-radius: 1.2rem;
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    position: relative;
-    transition: transform 0.2s;
-}
-
-.kill_card:hover {
-    transform: translateY(-5px);
-    border-color: #3b82f6;
-}
-
-/* Badges de Rank (Círculos) */
-.badge {
-    width: 3.5rem;
-    height: 3.5rem;
-    background-color: #2563eb;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 1.4rem;
-    position: absolute;
-    top: -1.5rem;
-    left: 1rem;
-    border: 3px solid #020617;
-}
-
-/* Cores específicas para o Top 3 */
-.rank-1 {
-    border-color: #eab308;
-}
-
-.rank-1 .badge {
-    background-color: #eab308;
-}
-
-.rank-2 {
-    border-color: #9ca3af;
-}
-
-.rank-2 .badge {
-    background-color: #9ca3af;
-}
-
-.rank-3 {
-    border-color: #ea580c;
-}
-
-.rank-3 .badge {
-    background-color: #ea580c;
-}
-
-/* Informações do Jogador */
-.player_info {
-    flex-grow: 1;
-    margin-left: 1rem;
-}
-
-.player_info h4 {
-    font-size: 1.8rem;
-    color: white;
-    margin-bottom: 0.5rem;
-}
-
-.player_info p {
-    font-size: 1.1rem;
-    color: #9ca3af;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-/* Stats de Kills na Direita */
-.kill_stats {
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-}
-
-.kill_stats .lbl {
-    font-size: 1rem;
-    color: #9ca3af;
-    font-weight: bold;
-}
-
-.kill_stats .num {
-    font-size: 2.8rem;
-    color: #4ade80;
-    /* Verde neon dos números */
-    font-weight: 900;
-    line-height: 1;
-}
-
-
 
 .footer{
     background: linear-gradient(to right, #0A0D16, rgba(0, 0, 0, 0.63));
     padding: 4rem 2rem;
     border-top: 2px solid #13234F;
     text-align: center;
+    .footer p:nth-child(1){
+        color: #93C5FD;
+        text-align: center;
+        font-size: 1.8em;
+        font-weight: bold;
+    }
+    
+    .footer a:nth-child(1){
+        color: white;
+        text-align: center;
+        font-size: 1.8em;
+        background: linear-gradient(to right, #db2777, #9333ea);
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+        display: inline-block;
+    }
+    
+    .footer a:nth-child(1) {
+        color: white;
+        font-size: 1.8em;
+        background: linear-gradient(to right, #db2777, #9333ea);
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+        display: inline-block;
+        transition: all 0.2s ease-in-out;
+    }
+    .footer a:nth-child(2) {
+        color: white;
+        font-size: 1.8em;
+        background-color: black;
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+        display: inline-block;
+        transition: all 0.2s ease-in-out;
+    }
+    .footer a:nth-child(3) {
+        color: white;
+        font-size: 1.8em;
+        background-color: #2BD46A;
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+        display: inline-block;
+        transition: all 0.2s ease-in-out;
+    }
+    .footer a:hover{
+        transform: scale(1.1);
+    }
+    .links{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    
+    .copyright{
+        font-size: 1.4em;
+        color: #565B68;
+        margin-top: 2rem;
+    }
 }
 
-.footer p:nth-child(1){
-    color: #93C5FD;
-    text-align: center;
-    font-size: 1.8em;
-    font-weight: bold;
-}
 
-.footer a:nth-child(1){
-    color: white;
-    text-align: center;
-    font-size: 1.8em;
-    background: linear-gradient(to right, #db2777, #9333ea);
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
-    display: inline-block;
-}
 
-.footer a:nth-child(1) {
-    color: white;
-    font-size: 1.8em;
-    background: linear-gradient(to right, #db2777, #9333ea);
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
-    display: inline-block;
-    transition: all 0.2s ease-in-out;
-}
-.footer a:nth-child(2) {
-    color: white;
-    font-size: 1.8em;
-    background-color: black;
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
-    display: inline-block;
-    transition: all 0.2s ease-in-out;
-}
-.footer a:nth-child(3) {
-    color: white;
-    font-size: 1.8em;
-    background-color: #2BD46A;
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
-    display: inline-block;
-    transition: all 0.2s ease-in-out;
-}
-.footer a:hover{
-    transform: scale(1.1);
-}
-.links{
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.copyright{
-    font-size: 1.4em;
-    color: #565B68;
-    margin-top: 2rem;
-}
 /* Responsividade: Se a tela for pequena, vira 1 coluna */
 @media (max-width: 900px) {
     .top_kills_grid {
