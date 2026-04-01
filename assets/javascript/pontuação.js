@@ -291,86 +291,104 @@
 //                         //aq ira somar e armazenar as kills
 //                         somaKills += jogadoresPartidaKillArray[i]
 //                     }
-
+                    
 //                     this.ordemDoRanking(nomeEquipe, nomeJogadores, jogadoresPartidaKillArray, somaKills)
 //                     // criarRankJogador.start(nomeEquipe, nomeJogadores, jogadoresPartidaKillArray, somaKills)
                     
 //                 }
 
-//                 this.ranking.sort((a, b) => b.total - a.total)
-//                 console.log(this.ranking)
+                
+                
 //             }
+
+//             //aq ira ordenar quem tem mais pontos
+//             this.ranking.sort((a, b) => b.pts - a.pts)
+
+//             //aq ira colocar as posições de cada jogador
+//             this.ranking.forEach((jogador, index) => {
+//                 jogador.posição = index + 1
+//             })
+//             criarRankJogador.start(this.ranking)
 //         },
-//         ordemDoRanking(nomeEquipe, nomeJogadores, jogadoresPartidaKillArray, somaKills){
+//         ordemDoRanking(nomeEquipe, nomeJogadores, jogadoresPartidaKillArray, somaKills) {
+            
 //             const infoJogador = {
 //                 equipe: nomeEquipe,
 //                 jogador: nomeJogadores,
 //                 kills: jogadoresPartidaKillArray,
-//                 total: somaKills
+//                 pts: somaKills
 //             }
 //             this.ranking.push(infoJogador)
             
 //         }
 //     }
 
-//     // const criarRankJogador = {
-//     //     start(nomeEquipe, nomeJogadores, jogadoresPartidaKillArray, somaKills) {
-//     //         this.criaContainerJogador(posicao, nomeJogadores, somaKills, nomeEquipe)
-//     //     },
-//     //     criaContainerJogador(posicao, nomeJogador, kill, equipe) {
-//     //         const top_kills_grid = document.querySelector(".top_kills_grid")
-//     //         const containerJogador = document.createElement("div")
-//     //         containerJogador.setAttribute("class", "kill_card")
-//     //         if (posicao == 1) {
-//     //             containerJogador.setAttribute("class", "kill_card rank-1")
-//     //         } if (posicao == 2) {
-//     //             containerJogador.setAttribute("class", "kill_card rank-2")
-//     //         } if (posicao == 3) {
-//     //             containerJogador.setAttribute("class", "kill_card rank-3")
-//     //         }
-//     //         top_kills_grid.appendChild(containerJogador)
-//     //         this.criaPosição(containerJogador, posicao, nomeJogador, kill, equipe)
-//     //     },
-//     //     criaPosição(containerJogador, posicao, nomeJogador, kill, equipe) {
-//     //         const p = document.createElement("p")
-//     //         p.setAttribute("class", "badge")
-//     //         p.textContent = posicao
-//     //         containerJogador.appendChild(p)
-//     //         this.criarNomeEquipe(containerJogador, posicao, nomeJogador, kill, equipe)
-//     //     },
-//     //     criarNomeEquipe(containerJogador, posicao, nomeJogador, kill, equipe){
-//     //         const divPlayerInfo = document.createElement("div")
-//     //         divPlayerInfo.setAttribute("class", "player_info")
-//     //         containerJogador.appendChild(divPlayerInfo)
+//     const criarRankJogador = {
+//         start(objJogadores) {
+            
+//             //aq ira percorrer cada cada chave do objeto dos joagdores
+//             objJogadores.forEach(players => {
+
+//                 //aq ira enviar os dados para criar o rank na tela
+//                 this.criaContainerJogador(players.posicao, players.jogador, players.pts, players.equipe)
+
+//             })
+//             // this.criaContainerJogador(posicao, nomeJogadores, somaKills, nomeEquipe)
+//         },
+//         criaContainerJogador(posicao, nomeJogador, kill, equipe) {
+//             const top_kills_grid = document.querySelector(".top_kills_grid")
+//             const containerJogador = document.createElement("div")
+//             containerJogador.setAttribute("class", "kill_card")
+//             if (posicao == 1) {
+//                 containerJogador.setAttribute("class", "kill_card rank-1")
+//             } if (posicao == 2) {
+//                 containerJogador.setAttribute("class", "kill_card rank-2")
+//             } if (posicao == 3) {
+//                 containerJogador.setAttribute("class", "kill_card rank-3")
+//             }
+//             top_kills_grid.appendChild(containerJogador)
+//             this.criaPosição(containerJogador, posicao, nomeJogador, kill, equipe)
+//         },
+//         criaPosição(containerJogador, posicao, nomeJogador, kill, equipe) {
+//             const p = document.createElement("p")
+//             p.setAttribute("class", "badge")
+//             p.textContent = posicao
+//             containerJogador.appendChild(p)
+//             this.criarNomeEquipe(containerJogador, posicao, nomeJogador, kill, equipe)
+//         },
+//         criarNomeEquipe(containerJogador, posicao, nomeJogador, kill, equipe){
+//             const divPlayerInfo = document.createElement("div")
+//             divPlayerInfo.setAttribute("class", "player_info")
+//             containerJogador.appendChild(divPlayerInfo)
 
 
-//     //         const nick = document.createElement("h4")
-//     //         nick.textContent = nomeJogador
-//     //         divPlayerInfo.appendChild(nick)
+//             const nick = document.createElement("h4")
+//             nick.textContent = nomeJogador
+//             divPlayerInfo.appendChild(nick)
 
-//     //         const nomeEquipe = document.createElement("p")
-//     //         nomeEquipe.textContent = equipe
-//     //         divPlayerInfo.appendChild(nomeEquipe)
+//             const nomeEquipe = document.createElement("p")
+//             nomeEquipe.textContent = equipe
+//             divPlayerInfo.appendChild(nomeEquipe)
 
-//     //         this.criarKill(containerJogador, posicao, nomeJogador, kill, equipe)
-//     //     },
-//     //     criarKill(containerJogador, posicao, nomeJogador, kill, equipe) {
-//     //         const divKill = document.createElement("div")
-//     //         divKill.setAttribute("class", "kill_stats")
-//     //         containerJogador.appendChild(divKill)
+//             this.criarKill(containerJogador, posicao, nomeJogador, kill, equipe)
+//         },
+//         criarKill(containerJogador, posicao, nomeJogador, kill, equipe) {
+//             const divKill = document.createElement("div")
+//             divKill.setAttribute("class", "kill_stats")
+//             containerJogador.appendChild(divKill)
 
 
-//     //         const nomeKills = document.createElement("span")
-//     //         nomeKills.setAttribute("class", "lbl")
-//     //         nomeKills.textContent = "Kills"
-//     //         divKill.appendChild(nomeKills)
+//             const nomeKills = document.createElement("span")
+//             nomeKills.setAttribute("class", "lbl")
+//             nomeKills.textContent = "Kills"
+//             divKill.appendChild(nomeKills)
 
-//     //         const kills = document.createElement("span")
-//     //         kills.setAttribute("class", "num")
-//     //         kills.textContent = kill
-//     //         divKill.appendChild(kills)
-//     //     }
-//     // }
+//             const kills = document.createElement("span")
+//             kills.setAttribute("class", "num")
+//             kills.textContent = kill
+//             divKill.appendChild(kills)
+//         }
+//     }
 
 
 
