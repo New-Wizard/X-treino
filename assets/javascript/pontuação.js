@@ -1,25 +1,37 @@
 // (function () {
-    
-
-   
-//     // import { Equipe } from './script.js';
-    
-
 //     //pega os dados do json
 //     let season
+//     let jogadores
 //     async function carregarDados() {
 //         const resposta = await fetch("assets/data/season2.0.json")
 //         season = await resposta.json()
-        
+
+//         const resposta2 = await fetch("assets/data/jogadores3.0.json")
+//         jogadores = await resposta2.json()
 //     }
 //     //o js para e espera pegar todos os dados no json
 //     async function iniciarApp() {
 //         await carregarDados()
 //         tabela.start()
-
+//         vereficaçãoPlayer.start()
 //     }
 //     iniciarApp()
     
+//     const classificação = [
+//         {posição: 1, pts: 12},
+//         {posição: 2, pts: 9 },
+//         {posição: 3, pts: 8 },
+//         {posição: 4, pts: 7 },
+//         {posição: 5, pts: 6},
+//         {posição: 6, pts: 5},
+//         {posição: 7, pts: 4},
+//         {posição: 8, pts: 3},
+//         {posição: 9, pts: 2},
+//         {posição: 10, pts: 1},
+//         {posição: 11, pts: 0},
+//         { posição: 12, pts: 0 },
+//         {kill: 1},
+//     ]
 
 //     //aq ele pega e armazena todos os dados do json
 //     const pegarDados = {
@@ -78,11 +90,13 @@
             
             
 //         },
+
 //         //aq soma as kills
 //         somarPontosKill(kill, numeroDaKills) {
 //             let pontuaçãoKill = kill + numeroDaKills
 //             return pontuaçãoKill
 //         },
+
 //         //ira somar os pontos de posição
 //         somaPontosPosição(posição, numeroDaPosição) {
 //             //essa variavel ir armazenar os pts por queda
@@ -101,24 +115,11 @@
 //         }
 
 //     }
+ 
+    
 
-//     const classificação = [
-//         {posição: 1, pts: 12},
-//         {posição: 2, pts: 9 },
-//         {posição: 3, pts: 8 },
-//         {posição: 4, pts: 7 },
-//         {posição: 5, pts: 6},
-//         {posição: 6, pts: 5},
-//         {posição: 7, pts: 4},
-//         {posição: 8, pts: 3},
-//         {posição: 9, pts: 2},
-//         {posição: 10, pts: 1},
-//         {posição: 11, pts: 0},
-//         { posição: 12, pts: 0 },
-//         {kill: 1},
-//     ]
-        
-        
+
+//     //aq ira formar os dados para criar a tabela    
 //     const tabela = {
 //         start() {
 //             const select = document.querySelector(".container_select")
@@ -129,13 +130,15 @@
 
 //                 //são as seasons que estão do json
 //                 const seasonJson = season
+
 //                 //pega todos os seasons um por um
 //                 for (let seasons in seasonJson){
+
 //                     //se as seasons do json for igual a que foi selecionada faz isso
 //                     if (seasons == seasonSelecionada) {
-                        
 //                         const dados = pegarDados.start(seasonSelecionada)
 //                         this.carregarTabela(dados)
+                        
 //                     }
 
 //                 }
@@ -153,8 +156,6 @@
 //             // new Equipe("1", "detonadores", 1,2,3,4, "01/01/2000", "season6")
 //         }
 //     }
-
-
 
 //     const criarTabela = {
 //             start(posição, equipe, quedas, abate, booyah, pts, data, season){
@@ -238,6 +239,143 @@
 //             }
 
 //     }
+
+
+//     //aq ira vereficar se a season esta correta no rank dos jogadores
+//     const vereficaçãoPlayer = {
+//         start(){
+//             const select = document.querySelector(".container_select")
+
+//             //quando seleciona o valor do select
+//             select.addEventListener("change", () => {
+
+//                 //armazena o value do select selecionado
+//                 const seasonSelecionada = select.value
+//                 this.seasonSelecionada(seasonSelecionada)
+//             })
+//         },
+//         seasonSelecionada(seasonEscolhida){
+//             for(let seasonJson in jogadores){
+//                 if(seasonEscolhida == seasonJson){
+//                     const equipesPlayers = jogadores[seasonJson].equipes
+//                     formarDadosJogadores.start(equipesPlayers)
+//                 }
+//             }
+//         }
+//     }
+
+//     const formarDadosJogadores = {
+//         start(equipesPlayers){
+//             this.ranking = []
+//             // console.log(equipesPlayers)
+
+//             //aq ira percorrer os nomes das equipes
+//             for(let nomeEquipe in equipesPlayers){
+                
+
+//                 //aq vai armazenar todos os jogadores de uma equipe
+//                 const jogadoresEquipe = equipesPlayers[nomeEquipe]
+                
+
+//                 //aq ira percorrer todos os jogadores de uma equipe
+//                 for(let nomeJogadores in jogadoresEquipe){
+
+//                     // aq ira armazenar a soma total de cada jogador
+//                     let somaKills = 0
+
+//                     //aq ira armazenar as  partidas de cada jogador
+//                     let jogadoresPartidaKillArray = jogadoresEquipe[nomeJogadores]
+
+//                     //aq ira percorrer cada kill que o jogador fez
+//                     for(let i = 0; i < jogadoresPartidaKillArray.length; i++){
+//                         //aq ira somar e armazenar as kills
+//                         somaKills += jogadoresPartidaKillArray[i]
+//                     }
+
+//                     this.ordemDoRanking(nomeEquipe, nomeJogadores, jogadoresPartidaKillArray, somaKills)
+//                     // criarRankJogador.start(nomeEquipe, nomeJogadores, jogadoresPartidaKillArray, somaKills)
+                    
+//                 }
+
+//                 this.ranking.sort((a, b) => b.total - a.total)
+//                 console.log(this.ranking)
+//             }
+//         },
+//         ordemDoRanking(nomeEquipe, nomeJogadores, jogadoresPartidaKillArray, somaKills){
+//             const infoJogador = {
+//                 equipe: nomeEquipe,
+//                 jogador: nomeJogadores,
+//                 kills: jogadoresPartidaKillArray,
+//                 total: somaKills
+//             }
+//             this.ranking.push(infoJogador)
+            
+//         }
+//     }
+
+//     // const criarRankJogador = {
+//     //     start(nomeEquipe, nomeJogadores, jogadoresPartidaKillArray, somaKills) {
+//     //         this.criaContainerJogador(posicao, nomeJogadores, somaKills, nomeEquipe)
+//     //     },
+//     //     criaContainerJogador(posicao, nomeJogador, kill, equipe) {
+//     //         const top_kills_grid = document.querySelector(".top_kills_grid")
+//     //         const containerJogador = document.createElement("div")
+//     //         containerJogador.setAttribute("class", "kill_card")
+//     //         if (posicao == 1) {
+//     //             containerJogador.setAttribute("class", "kill_card rank-1")
+//     //         } if (posicao == 2) {
+//     //             containerJogador.setAttribute("class", "kill_card rank-2")
+//     //         } if (posicao == 3) {
+//     //             containerJogador.setAttribute("class", "kill_card rank-3")
+//     //         }
+//     //         top_kills_grid.appendChild(containerJogador)
+//     //         this.criaPosição(containerJogador, posicao, nomeJogador, kill, equipe)
+//     //     },
+//     //     criaPosição(containerJogador, posicao, nomeJogador, kill, equipe) {
+//     //         const p = document.createElement("p")
+//     //         p.setAttribute("class", "badge")
+//     //         p.textContent = posicao
+//     //         containerJogador.appendChild(p)
+//     //         this.criarNomeEquipe(containerJogador, posicao, nomeJogador, kill, equipe)
+//     //     },
+//     //     criarNomeEquipe(containerJogador, posicao, nomeJogador, kill, equipe){
+//     //         const divPlayerInfo = document.createElement("div")
+//     //         divPlayerInfo.setAttribute("class", "player_info")
+//     //         containerJogador.appendChild(divPlayerInfo)
+
+
+//     //         const nick = document.createElement("h4")
+//     //         nick.textContent = nomeJogador
+//     //         divPlayerInfo.appendChild(nick)
+
+//     //         const nomeEquipe = document.createElement("p")
+//     //         nomeEquipe.textContent = equipe
+//     //         divPlayerInfo.appendChild(nomeEquipe)
+
+//     //         this.criarKill(containerJogador, posicao, nomeJogador, kill, equipe)
+//     //     },
+//     //     criarKill(containerJogador, posicao, nomeJogador, kill, equipe) {
+//     //         const divKill = document.createElement("div")
+//     //         divKill.setAttribute("class", "kill_stats")
+//     //         containerJogador.appendChild(divKill)
+
+
+//     //         const nomeKills = document.createElement("span")
+//     //         nomeKills.setAttribute("class", "lbl")
+//     //         nomeKills.textContent = "Kills"
+//     //         divKill.appendChild(nomeKills)
+
+//     //         const kills = document.createElement("span")
+//     //         kills.setAttribute("class", "num")
+//     //         kills.textContent = kill
+//     //         divKill.appendChild(kills)
+//     //     }
+//     // }
+
+
+
+
+
 // })()
 
 

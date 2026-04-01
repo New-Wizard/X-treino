@@ -65,28 +65,28 @@
                 }
             }
 },
-        // carregarSeason(nomeSeason) {
-        //     if (nomeSeason != "selecioneSeason") {
-        //         const tbody = document.querySelector("#tbody")
-        //         tbody.innerHTML = ""
-        //     }
+        carregarSeason(nomeSeason) {
+            if (nomeSeason != "selecioneSeason") {
+                const tbody = document.querySelector("#tbody")
+                tbody.innerHTML = ""
+            }
 
-        //     for (let season in seasons) {
-        //         if (nomeSeason == season) {
-        //             const equipes = seasons[nomeSeason].equipes
+            for (let season in seasons) {
+                if (nomeSeason == season) {
+                    const equipes = seasons[nomeSeason].equipes
                     
-        //             const data = seasons[nomeSeason].data
+                    const data = seasons[nomeSeason].data
                     
                     
-        //             equipes.forEach((valor, index) => {
+                    equipes.forEach((valor, index) => {
 
-        //                 new Equipe(index + 1, valor.equipe, valor.quedas, valor.abates, valor.booyah, valor.pts, data, nomeSeason)
+                        new Equipe(index + 1, valor.equipe, valor.quedas, valor.abates, valor.booyah, valor.pts, data, nomeSeason)
 
-        //             });
+                    });
 
-        //         }
-        //     }
-        // },
+                }
+            }
+        },
         carregarRankJogador(nomeSeason) {
 
             if (!seasons[nomeSeason] && nomeSeason !== "selecioneSeason") {
