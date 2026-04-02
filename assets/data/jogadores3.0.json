@@ -1,4 +1,96 @@
 {
+    "season6": {
+        "data": "25/11/2023",
+        "equipes": {
+            "Os sem teto": {
+                "Rd mitsuki7": [5, 0, 0, 0, 0],
+                "Ita mpking9": [1, 0, 0, 0, 0],
+                "Obg-ght-mete": [null, 0, 0, 0, 0],
+                "Oby-ght-cr": [1, 0, 0, 0, 0]
+
+            },
+            "Team Fluxo": {
+                "Lord t soca": [6, 0, 0, 0, 0],
+                "B2k r4am1v2": [2, 0, 0, 0, 0],
+                "Treme não ": [6, 0, 0, 0, 0],
+                "Hz 07": [5, 0, 0, 0, 0]
+            },
+            "Team Fluxo 2": {
+                "Fx sasuke" : [0, 0, 0, 0, 0],
+                "Freestyle": [0, 0, 0, 0, 0],
+                "God Tm MADARA": [2, 0, 0, 0, 0],
+                "Fx itachi": [2, 0, 0, 0, 0],
+                "CDZ Camist": [null, 0, 0, 0, 0]
+            },
+            "GHOST Girl": {
+                "Sw ingrid9" : [5, 0, 0, 0, 0],
+                "Sw mística7": [1, 0, 0, 0, 0],
+                "Sw hori": [1, 0, 0, 0, 0],
+                "Astrid 69": [1, 0, 0, 0, 0]
+            },
+            "Destroyers": {
+                "Sw myamura" : [0, 0, 0, 0, 0],
+                "Sw dh7": [1, 0, 0, 0, 0],
+                "Sw místico": [1, 0, 0, 0, 0],
+                "Sw igk9": [2, 0, 0, 0, 0]
+            },
+            "Night Raid": {
+                "Rd venox" : [1, 0, 0, 0, 0],
+                "Eqp covarde": [5, 0, 0, 0, 0],
+                "Skyhard": [4, 0, 0, 0, 0],
+                "Tripa seca": [5, 0, 0, 0, 0]
+            },
+            "Not Móbile": {
+                "Hs 10 DNx" : [0, 0, 0, 0, 0],
+                "A7 Martins": [0, 0, 0, 0, 0],
+                "I am": [0, 0, 0, 0, 0],
+                "Dudu600x0": [0, 0, 0, 0, 0]
+            },
+            "BESERKERS": {
+                "BSK lwzin" : [3, 0, 0, 0, 0],
+                "BSK drago 09": [0, 0, 0, 0, 0],
+                "Anibartecorte": [1, 0, 0, 0, 0],
+                "BSK Goat": [null, 0, 0, 0, 0]
+            },
+            "BESERKERS 2.0": {
+                "BSK kirito" : [1, 0, 0, 0, 0],
+                "GHOST": [0, 0, 0, 0, 0],
+                "BSK Zeus": [1, 0, 0, 0, 0],
+                "YagoD'trevas": [1, 0, 0, 0, 0],
+                "bot.X" : [null, 0, 0, 0, 0]
+            },
+            "Lk 01": {
+                "Caçador" : [2, 0, 0, 0, 0],
+                "Lk atirador": [1, 0, 0, 0, 0],
+                "Lk fantasma": [1, 0, 0, 0, 0],
+                "Lk duzinn": [0, 0, 0, 0, 0]
+            },
+            "Lk 02 ": {
+                "Pedro Lk" : [1, 0, 0, 0, 0],
+                "Lk Biel": [1, 0, 0, 0, 0],
+                "Lk general": [0, 0, 0, 0, 0],
+                "Lk gordão": [1, 0, 0, 0, 0]
+            },
+            "De Manaus": {
+                "Ódio" : [4, 0, 0, 0, 0],
+                "Japonesa": [3, 0, 0, 0, 0],
+                "Asta noelle": [3, 0, 0, 0, 0],
+                "Dm stlye": [1, 0, 0, 0, 0]
+            }
+        }
+    },
+
+
+
+    
+
+
+
+
+
+
+
+
     "season7": {
         "data": "25/11/2023",
         "equipes": {
