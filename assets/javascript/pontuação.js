@@ -1,5 +1,7 @@
+
+
 (function () {
-    alert("season6 e season7 em manutenção")
+   
     //pega os dados do json
     let season
     let jogadores
@@ -160,6 +162,7 @@
     }
 
     const criarTabela = {
+
             start(posição, equipe, quedas, abate, booyah, pts, data, season){
                 this.posição = posição
                 this.equipe = equipe
@@ -170,20 +173,22 @@
                 this.data = data
                 this.season = season
                 const tbody = document.querySelector("#tbody")
-                this.criarTr(tbody)
+                this.criarTr(tbody, posição)
                 this.mudarData(data)
                 this.mudarNomeSeason(season)
             },
-            criarTr(tbody) {
+            criarTr(tbody, posição) {
                 const createTr = document.createElement("tr")
+                createTr.setAttribute("id", `tr${posição}`)
                 const tr = tbody.appendChild(createTr)
-            
+                
                 this.criarPosiçãoTd(tr)
                 this.criarEquipeTd(tr)
                 this.criarQuedasTd(tr)
                 this.criarAbatesTd(tr)
                 this.criarBooyahTd(tr)
                 this.criarPtsTd(tr)
+                this.criarBtn(tr, posição)
             },
             criarPosiçãoTd(tr) {
                 const td = document.createElement("td")
@@ -230,6 +235,15 @@
                 tr.appendChild(td)
                 td.appendChild(strong)
                 strong.innerHTML = `${this.pts}`
+            },
+            criarBtn(tr, posição){
+                const td = document.createElement("td")
+                const btn = document.createElement("button")
+                btn.setAttribute("id", `info${posição}`)
+                td.appendChild(btn)
+                btn.textContent = "📋"
+                tr.appendChild(td)
+
             },
             mudarData(data) {
                 const spanData = document.querySelector("#data")

@@ -1,6 +1,6 @@
 {
     "season6": {
-        "data": "25/11/2023",
+        "data": "25/03/2026",
         "equipes": {
             "Os sem teto": {
                 "Rd mitsuki7": [5, 7, 0, null, null],
@@ -80,30 +80,75 @@
         }
     },
 
-
-
-    
-
-
-
-
-
-
-
-
     "season7": {
-        "data": "25/11/2023",
+        "data": "01/04/2026",
         "equipes": {
-            "Trem Bala": {
-                "Rd mitsuki7": [1, 1, 1, 1, 1],
-                "Brenno": [2, 2, 2, 2, 2],
-                "Jogador3": [3, 3, 3, 3, 3],
-                "Jogador4": [4, 4, 4, 4, 4]
+            "Hazard fm7": {               
+                "Fm7 noxx mvp": [7, 2, 3, 7, 0], 
+                "Fm7 santos x7": [3, 4, 1, 3, 5],
+                "Lzx David x7": [6, 7, 2, 6, 4],
+                "Lzx ksk!ng": [0, 6, 2, 7, 5]
             },
-            "Equipe6": {
-                "Jogador A": [0, 0, 0, 0, 0],
-                "Jogador B": [0, 0, 0, 0, 0]
+            "Team Fluxo": {
+                "Lord t soca": [3, 1, 1, null, null],
+                "Treme não": [16, 0, 2, 0, null],
+                "Hz 07": [0, 0, 2, 0, null],
+                "God Tm MADARA": [5, 0, 2, 0, null],
+                "Ruan_zz_01": [null, null, null, 0, null]
+            },
+            "Legion End": {
+                "SW G_SOUZA ": [1, 1, 0, 0, 2],
+                "SW GHOST7wp": [1, 0, 3, 0, 3],
+                "SW MYAMURA": [5, 2, 4, 2, 0],
+                "Nts mito ": [0, 2, 3, 2, 3]
+            },
+            "Lk 02": {
+                "Pedro Lk": [1, 0, 0, 0, 0],
+                "Gui": [0, 0, 2, 0, 0],
+                "Lk Biel ": [2, null, null, 0, 1],
+                "Lk giusilva": [0, 0, 0, 0, 0]
+            },
+            "Barcelona": {
+                "Bcn Manolo": [4, 3, 3, 1, 5],
+                "Bcn chelly": [0, 0, 2, 1, null],
+                "Bcn jinwoo": [2, 2, 6, 1, 3],
+                "Bcn venom ": [0, 1, 2, 0, 1]
+            },
+            "Lk 01": {
+                "Caçador ": [0, 2, 0, 2, 1],
+                "Lk duzinn ": [0, 2, 0, 1, 1],
+                "Tmlucas244lk": [0, 1, 0, null, null],
+                "Lk general": [0, 2, 2, 0, 0],
+                "Lk GORDÃO": [null, null, null, 0, 0]
+            },
+            "Os sem teto": {
+                "Obg ght mete": [0, 0, 0, 0, 0],
+                "Monica": [0, null, null, null, null],
+                "Vitor": [0, null, null, null, null],
+                "Elias caçado": [0, null, null, null, null],
+                "oby_ght.cr7z": [null, 0, 0, 0, null],
+                "Black": [null, null, null, 0, null],
+                "FX__joz": [null, null, null, 0, null]
+            },
+            "BESERKERS 2.0": {
+                "BSK doutor ": [0, 1, 1, 0, 0],
+                "Anibatcortes": [0, 0, 0, 0, 2],
+                "BSK Zeus": [0, 0, 0, 1, 4],
+                "GHOST": [1, 4, 4, 3, 3]
+            },
+            "BESERKERS": {
+                "BSK goat": [0, 0, 0, 9, 1],
+                "BSK lwzin": [1, 0, 0, 4, 0],
+                "BSK kirito": [0, 0, 0, 7, 1],
+                "BSK drago9": [3, 0, 0, 0, 1]
+            },
+            "Night Raid": {
+                "Rexona ump": [0, 4, 2, null, null],
+                "RD Ruannn 7": [0, 2, 2, null, null],
+                "Ts thzz": [0, 0, 0, null, null],
+                "fpzinn": [null, 0, null, 0, null]
             }
+           
         }
     }
 }

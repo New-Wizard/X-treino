@@ -304,6 +304,23 @@ body {
 .container .table_wrapper .container_table td:nth-child(6) {
   width: 15%;
 }
+.container .table_wrapper .container_table th:nth-child(7),
+.container .table_wrapper .container_table td:nth-child(7) {
+  width: 5%;
+}
+.container .table_wrapper .container_table td > button {
+  background-color: #2563EB;
+  border: none;
+  text-align: center;
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.container .table_wrapper .container_table td > button:hover {
+  cursor: pointer;
+  background-color: rgba(37, 100, 235, 0.6352941176);
+  transform: scale(1.1);
+}
 .container .table_wrapper .container_table td {
   padding: 1.5rem 1rem;
   text-align: center;
@@ -397,16 +414,108 @@ body {
   font-size: 1.8em !important;
 }
 .container .table_wrapper .desempenhoDetalhado {
-  background-color: #111726;
+  background-color: #101624;
+  padding: 2rem;
+  height: 0;
+  overflow: hidden;
 }
 .container .table_wrapper .desempenhoDetalhado h2 {
   color: #60A5FA;
   font-size: 2em;
+  font-weight: bolder;
 }
 .container .table_wrapper .desempenhoDetalhado > h2 > span {
   text-transform: uppercase;
   font-weight: bolder;
   margin-bottom: 1rem;
+}
+.container .table_wrapper .desempenhoDetalhado_quedas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem;
+}
+.container .table_wrapper .desempenhoDetalhado_quedas_partida {
+  background-color: #1F2937;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.171);
+  flex: 1 1 0;
+}
+.container .table_wrapper .desempenhoDetalhado_quedas_partida h3 {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  border-radius: 2rem;
+  background-color: #2563EB;
+  font-size: 1.8em;
+  color: white;
+  margin-bottom: 1rem;
+}
+.container .table_wrapper .desempenhoDetalhado_quedas_partida_posição {
+  color: rgb(218, 216, 216);
+  font-size: 1.6em;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .table_wrapper .desempenhoDetalhado_quedas_partida_posição span {
+  font-size: 2rem;
+  color: yellow;
+  font-weight: bolder;
+  margin-left: 1rem;
+}
+.container .table_wrapper .desempenhoDetalhado_quedas_partida_kills {
+  color: rgb(218, 216, 216);
+  font-size: 1.6em;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .table_wrapper .desempenhoDetalhado_quedas_partida_kills span {
+  color: #4ADE80;
+  font-weight: bolder;
+  font-size: 1.8rem;
+  margin-left: 2rem;
+}
+.container .table_wrapper .desempenhoDetalhado_quedas_ptsPosição {
+  border-top: 1px solid rgba(128, 128, 128, 0.534);
+  color: rgba(218, 216, 216, 0.479);
+  font-size: 1.2em;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .table_wrapper .desempenhoDetalhado_quedas_ptsPosição span {
+  color: white;
+  font-size: 1.6rem;
+}
+.container .table_wrapper .desempenhoDetalhado_quedas_ptsKills {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.534);
+  color: rgba(218, 216, 216, 0.479);
+  font-size: 1.2em;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .table_wrapper .desempenhoDetalhado_quedas_ptsKills span {
+  color: white;
+  font-size: 1.6rem;
+}
+.container .table_wrapper .desempenhoDetalhado_quedas_total {
+  color: #58A5FA;
+  font-size: 1.6em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 900;
+}
+.container .table_wrapper .desempenhoDetalhado_quedas_total span {
+  font-size: 1.8rem;
+  font-weight: 900;
 }
 .container {
   /* --- TABELA-FIM --- */
