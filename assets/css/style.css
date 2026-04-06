@@ -415,9 +415,11 @@ body {
 }
 .container .table_wrapper .desempenhoDetalhado {
   background-color: #101624;
-  padding: 2rem;
-  height: 0;
   overflow: hidden;
+}
+.container .table_wrapper .desativar {
+  height: 0 !important;
+  padding: 0 !important;
 }
 .container .table_wrapper .desempenhoDetalhado h2 {
   color: #60A5FA;

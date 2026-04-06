@@ -119,6 +119,7 @@
         }
 
     }
+    let dados = []
  
     
 
@@ -154,6 +155,7 @@
             arrayEquipes.sort((a, b) => b.pts - a.pts)
             arrayEquipes.forEach((equipe, index) => {
                 equipe.posicao = index + 1
+                
 
                 criarTabela.start(equipe.posicao, equipe.equipe, equipe.quedas, equipe.abate, equipe.booyah, equipe.pts, equipe.data, equipe.nomeSeason)
             })
@@ -416,7 +418,7 @@
 
 
 
-// (function () {
+
 //     let seasonData;
 //     let jogadoresData;
 

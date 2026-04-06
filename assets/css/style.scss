@@ -302,6 +302,9 @@ body {
         }
         
         /* Colunas (Larguras) */
+        .td_infoPartida{
+            // width: 100% !important;
+        }
         .container_table th:nth-child(1),
         .container_table td:nth-child(1) {
             width: 10%;
@@ -435,9 +438,11 @@ body {
         //detalhes das partidas
         .desempenhoDetalhado{
             background-color: #101624;
-            padding: 2rem;
-            height: 0;
             overflow: hidden;
+        }
+        .desativar{
+            height: 0 !important;
+            padding: 0 !important;
         }
         .desempenhoDetalhado h2{
             color: #60A5FA;
