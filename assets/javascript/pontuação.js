@@ -175,13 +175,14 @@
                 this.data = data
                 this.season = season
                 const tbody = document.querySelector("#tbody")
-                this.criarTr(tbody, posição)
+                this.criarTr(tbody, posição, equipe)
                 this.mudarData(data)
                 this.mudarNomeSeason(season)
             },
-            criarTr(tbody, posição) {
+            criarTr(tbody, posição, equipe) {
                 const createTr = document.createElement("tr")
                 createTr.setAttribute("id", `tr${posição}`)
+                createTr.setAttribute("name", `info${posição}`)
                 const tr = tbody.appendChild(createTr)
                 
                 this.criarPosiçãoTd(tr)
@@ -416,179 +417,6 @@
 
 })()
 
-
-
-
-//     let seasonData;
-//     let jogadoresData;
-
-//     // Carrega os dois arquivos JSON necessários
-//     async function carregarDados() {
-//         // Ajuste os caminhos se necessário
-//         const respostaSeason = await fetch("assets/data/season2.0.json");
-//         seasonData = await respostaSeason.json();
-
-//         // Aqui você carrega o JSON de jogadores que você me enviou
-//         // Vou assumir que o nome do arquivo é jogadores6.json ou similar
-//         const respostaJogadores = await fetch("assets/data/jogadores2.0.json");
-//         jogadoresData = await respostaJogadores.json();
-//     }
-
-//     async function iniciarApp() {
-//         await carregarDados();
-//         tabela.start();
-//     }
-//     iniciarApp();
-
-//     const pegarDados = {
-//         start(seasonSelecionada) {
-//             const dadosEquipes = this.pegarDadosDasEquipes(seasonData[seasonSelecionada], seasonSelecionada);
-//             const dadosJogadores = jogadoresData[seasonSelecionada] ? jogadoresData[seasonSelecionada].jogadores : [];
-            
-//             return { equipes: dadosEquipes, jogadores: dadosJogadores };
-//         },
-
-//         pegarDadosDasEquipes(seasonSelecionada, nomeDaSeason) {
-//             if (!seasonSelecionada) return [];
-            
-//             const arrayEquipes = seasonSelecionada.equipes;
-//             const resultadoFinal = [];
-//             const data = seasonSelecionada.data;
-
-//             arrayEquipes.forEach(infoEquipes => {
-//                 let kill = 0;
-//                 let posicaoPts = 0;
-//                 let booyah = 0;
-//                 const nomeEquipe = infoEquipes.equipe;
-//                 const arrayQuedas = infoEquipes.detalhes;
-
-//                 arrayQuedas.forEach(objQuedas => {
-//                     if (objQuedas.posicao == 1) booyah++;
-//                     kill += objQuedas.kills;
-//                     posicaoPts = this.somaPontosPosição(posicaoPts, objQuedas.posicao);
-//                 });
-
-//                 resultadoFinal.push({
-//                     equipe: nomeEquipe,
-//                     quedas: arrayQuedas.length,
-//                     abate: kill,
-//                     booyah: booyah,
-//                     pts: kill + posicaoPts,
-//                     data: data,
-//                     nomeSeason: nomeDaSeason
-//                 });
-//             });
-//             return resultadoFinal;
-//         },
-
-//         somaPontosPosição(totalAtual, numeroDaPosição) {
-//             const ptsMapa = { 1: 12, 2: 9, 3: 8, 4: 7, 5: 6, 6: 5, 7: 4, 8: 3, 9: 2, 10: 1 };
-//             return totalAtual + (ptsMapa[numeroDaPosição] || 0);
-//         }
-//     };
-
-//     const tabela = {
-//         start() {
-//             const select = document.querySelector(".container_select");
-//             select.addEventListener("change", () => {
-//                 const seasonSelecionada = select.value;
-                
-//                 // Só executa se a season existir no nosso novo JSON
-//                 if (seasonData[seasonSelecionada]) {
-//                     const todosOsDados = pegarDados.start(seasonSelecionada);
-//                     this.carregarTabela(todosOsDados.equipes);
-//                     this.carregarRankJogador(todosOsDados.jogadores, todosOsDados.equipes);
-//                 }
-//             });
-//         },
-
-//         carregarTabela(arrayEquipes) {
-//             const tbody = document.querySelector("#tbody");
-//             tbody.innerHTML = "";
-//             arrayEquipes.sort((a, b) => b.pts - a.pts);
-            
-//             arrayEquipes.forEach((equipe, index) => {
-//                 new Eequipe(index + 1, equipe.equipe, equipe.quedas, equipe.abate, equipe.booyah, equipe.pts, equipe.data, equipe.nomeSeason);
-//             });
-//         },
-
-//         carregarRankJogador(listaJogadores, equipesOrdenadas) {
-//             const grid = document.querySelector(".top_kills_grid");
-//             grid.innerHTML = "";
-
-//             if (!listaJogadores) return;
-
-//             // Criar mapa de posições para desempate
-//             const mapaPosicao = {};
-//             equipesOrdenadas.forEach((time, index) => {
-//                 mapaPosicao[time.equipe] = index + 1;
-//             });
-
-//             // Ordenar jogadores: 1º Kills, 2º Posição da Equipe
-//             listaJogadores.sort((a, b) => {
-//                 if (b.kill !== a.kill) return b.kill - a.kill;
-//                 return mapaPosicao[a.equipe] - mapaPosicao[b.equipe];
-//             });
-
-//             listaJogadores.forEach((valor, index) => {
-//                 this.renderizarCardJogador(index + 1, valor.jogador, valor.kill, valor.equipe);
-//             });
-//         },
-
-//         renderizarCardJogador(posicao, nome, kill, equipe) {
-//             const grid = document.querySelector(".top_kills_grid");
-//             const card = document.createElement("div");
-            
-//             let classeRank = "kill_card";
-//             if (posicao <= 3) classeRank += ` rank-${posicao}`;
-//             card.className = classeRank;
-
-//             card.innerHTML = `
-//                 <p class="badge">${posicao}</p>
-//                 <div class="player_info">
-//                     <h4>${nome}</h4>
-//                     <p>${equipe}</p>
-//                 </div>
-//                 <div class="kill_stats">
-//                     <span class="lbl">Kills</span>
-//                     <span class="num">${kill}</span>
-//                 </div>
-//             `;
-//             grid.appendChild(card);
-//         }
-//     };
-
-//     class Eequipe {
-//         constructor(posição, equipe, quedas, abate, booyah, pts, data, season) {
-//             this.posição = posição;
-//             this.equipe = equipe;
-//             this.quedas = quedas;
-//             this.abate = abate;
-//             this.booyah = booyah;
-//             this.pts = pts;
-//             this.data = data;
-//             this.season = season;
-//             this.render();
-//         }
-
-//         render() {
-//             const tbody = document.querySelector("#tbody");
-//             const tr = document.createElement("tr");
-//             tr.innerHTML = `
-//                 <td class="posicao"><p>${this.posição}</p></td>
-//                 <td class="equipe">${this.equipe}</td>
-//                 <td class="quedas">${this.quedas}</td>
-//                 <td class="abates">${this.abate}</td>
-//                 <td class="vitoria ${this.booyah > 0 ? 'booay' : ''}"><p>${this.booyah}</p></td>
-//                 <td class="pts"><strong>${this.pts}</strong></td>
-//             `;
-//             tbody.appendChild(tr);
-
-//             document.querySelector("#data").innerHTML = this.data;
-//             document.querySelector("#rankingSeason").innerHTML = `SEASON ${this.season.slice(-1)}`;
-//         }
-//     }
-// })();
 
 
 

@@ -12,40 +12,51 @@
     //o js para e espera pegar todos os dados no json
     async function iniciarApp() {
         await carregarDados()
-        dados.start(season)
+        
     }
     iniciarApp()
 
     const dados = {
-        start() {
-            const select = document.querySelector(".container_select")
+        start(trName,click) {
+            
+            const select = document.querySelector(".container_select").value
+            
 
-            //quando seleciona o valor do select
-            select.addEventListener("change", () => {
-                const seasonSelecionada = select.value
+            // //quando seleciona o valor do select
+            // select.addEventListener("change", () => {
+            //     const seasonSelecionada = select.value
 
-                //são as seasons que estão do json
-                const seasonJson = season
+            //     //são as seasons que estão do json
+            //     const seasonJson = season
 
-                //pega todos os seasons um por um
-                for (let seasons in seasonJson){
+            //     //pega todos os seasons um por um
+            //     for (let seasons in seasonJson){
 
-                    //se as seasons do json for igual a que foi selecionada faz isso
-                    if (seasons == seasonSelecionada) {
-                        this.teste(seasonSelecionada)
+            //         //se as seasons do json for igual a que foi selecionada faz isso
+            //         if (seasons == seasonSelecionada) {
+            //             this.teste(seasonSelecionada, trName)
                         
-                    }
+            //         }
 
-                }
-            })
+            //     }
+            // })
+
+            this.teste(select, trName, click)
         },
-        teste(seasonSelecionada) {
+        teste(seasonSelecionada, trName, click) {
             
             let posição = season[seasonSelecionada].equipes
-            posição.forEach(element => {
-                console.log(element)
+            posição.forEach(equipe => {
+                const nomeEquipe = equipe.equipe
+                
+                if (click.id === trName.getAttribute("name")){
+                    console.log(season[seasonSelecionada].equipe)
+                }
+                
+
+                
             });
-            console.log(posição)
+            
 
 
 
@@ -68,20 +79,23 @@
                     //se o btn for igual o id do btn no tr, faz isso
                     if (event.target.id === `info${i}`) {
                         const tr = document.querySelector(`#tr${i}`)
+                        // console.log(tr)
+                        
+                        dados.start(tr, event.target)
                         this.criarDivInfo(tr, i)
+                        
                     }
                 }
                 
             });
         },
         criarDivInfo(tr, i) {
-
             //aq ira pode apertar todos os btns e ira aparecer
             const trInfo = tr.nextSibling
+            
             if (trInfo && trInfo.id === `info${i}`) {
-                console.log(trInfo)
-                 trInfo.remove()
-                 return
+                trInfo.remove()
+                return
             }
            
             //aq cria o tr e o td, que ira ser add
