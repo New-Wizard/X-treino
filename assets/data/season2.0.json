@@ -743,8 +743,8 @@
             },
             {
              "queda": 3,
-             "kills": null,
-             "posicao":13  
+             "kills": 5,
+             "posicao":9
             },
             {
               "queda": 4,
@@ -809,8 +809,8 @@
             },
             {
              "queda": 3,
-             "kills": null,
-             "posicao":13  
+             "kills": 20,
+             "posicao":1
             },
             {
               "queda": 4,
@@ -875,8 +875,8 @@
             },
             {
              "queda": 3,
-             "kills": null,
-             "posicao":13  
+             "kills": 5,
+             "posicao":3 
             },
             {
               "queda": 4,
@@ -908,8 +908,8 @@
             },
             {
              "queda": 3,
-             "kills": null,
-             "posicao":13  
+             "kills": 4,
+             "posicao":6  
             },
             {
               "queda": 4,
@@ -975,8 +975,8 @@
             },
             {
              "queda": 3,
-             "kills": null,
-             "posicao":13  
+             "kills": 9,
+             "posicao":8
             },
             {
               "queda": 4,
@@ -1009,7 +1009,7 @@
             {
              "queda": 3,
              "kills": null,
-             "posicao":13  
+             "posicao":12  
             },
             {
               "queda": 4,
@@ -1074,8 +1074,8 @@
             },
             {
              "queda": 3,
-             "kills": null,
-             "posicao":13  
+             "kills": 5,
+             "posicao":4  
             },
             {
               "queda": 4,
@@ -1107,8 +1107,8 @@
             },
             {
              "queda": 3,
-             "kills": null,
-             "posicao":13  
+             "kills": 8,
+             "posicao":2  
             },
             {
               "queda": 4,

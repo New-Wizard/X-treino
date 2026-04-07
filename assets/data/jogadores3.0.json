@@ -156,10 +156,10 @@
         "equipes": {
             "HAZARD FM7": {               
                 "FM7 Noxx.MVP": [2, 3, 0, 6, 3], 
-                "FM7 SANTOSX7": [2, 4, 0, 3, 1],
-                "FM7 DIOGO": [2, 8, 0, 2, 3],
-                "Gosto.zim": [0, null, 0, null, null],
-                "FM7 Bell": [null, 4, 0, 4, 4]
+                "FM7 SANTOSX7": [2, 4, 2, 3, 1],
+                "FM7 DIOGO": [2, 8, 2, 2, 3],
+                "Gosto.zim": [0, null, null, null, null],
+                "FM7 Bell": [null, 4, 1, 4, 4]
             },
             "TEAM FLUXO": {               
                 "XTREME NAO么": [2, 0, 0, null, null], 
@@ -169,10 +169,10 @@
                 "__hz_07": [null, 0, 0, null, null]
             },
             "DESTROYERS": {               
-                "RUSH7 ntj": [3, 5, 0, 1, 2], 
-                "SW JORDAN⁷": [11, 4, 0, 1, 5],
-                "SW NK7": [7, 2, 0, 0, 2],
-                "SW IGK9": [6, 3, 0, 2, 8]
+                "RUSH7 ntj": [3, 5, 3, 1, 2], 
+                "SW JORDAN⁷": [11, 4, 8, 1, 5],
+                "SW NK7": [7, 2, 4, 0, 2],
+                "SW IGK9": [6, 3, 5, 2, 8]
             },
             "Barcelona": {               
                 "EQP PINGOLA": [null, 1, 0, 3, 4], 
@@ -181,17 +181,17 @@
                 "BCN Teus 07": [null, 2, 0, 2, 1]
             },
             "LK 01": {               
-                "LK-GENERAL": [1, 0, 0, 0, 0], 
-                "™Lucas244LK™": [2, 0, 0, 0, 1],
-                "LK duzinn$$": [3, 3, 0, 0, 2],
+                "LK-GENERAL": [1, 0, 1, 0, 0], 
+                "™Lucas244LK™": [2, 0, 2, 0, 1],
+                "LK duzinn$$": [3, 3, 2, 0, 2],
                 "FONTOURA.021": [1, 2, 0, 0, 1]
             },
             "LK 02": {               
-                "么Gui 乁ノ": [1, 0, 0, 1, 0], 
-                "LK_SABØTAGEⓋ": [0, 0, 0, 5, 0],
+                "么Gui 乁ノ": [1, 0, 2, 1, 0], 
+                "LK_SABØTAGEⓋ": [0, 0, 1, 5, 0],
                 "Lk Bruniix": [1, 0, 0, 0, 3],
-                "Cautela_'LK'": [0, null, 0, null, null],
-                "LK_GanjaVB": [null, null, 0, 2, null]
+                "Cautela_'LK'": [0, null, null, null, null],
+                "LK_GanjaVB": [null, null, 1, 2, null]
             },
             "001 GOATS": {               
                 "7nxz ✓": [3, 5, 0, null, null], 
@@ -200,17 +200,17 @@
                 "suarrez": [null, 3, 0, null, null]
             },
             "DE MANAUS": {               
-                "EGO|kawan": [1, 0, 0, 2, 2], 
+                "EGO|kawan": [1, 0, 1, 2, 2], 
                 "odio’": [1, 2, 0, 0, 0],
-                "iam : susu ✿": [1, 3, 0, null,null],
-                "愛ᵃ'mJAPONESA": [3, 5, 0, 2, 1],
-                "asta noele": [null, null, 0, 3, 2]
+                "iam : susu ✿": [1, 3, null, null,null],
+                "愛ᵃ'mJAPONESA": [3, 5, 6, 2, 1],
+                "asta noele": [null, null, 2, 3, 2]
             },
             "NIGHT RAID": {               
                 "†BOTZINHO": [3, 0, 0, null, null], 
                 "TSDthzz": [1, 0, 0, 0, null],
                 "SUESAPRIME Ⓥ": [2, 0, 0, 0, null],
-                "DAVIDAump[]": [1, null, 0, null, null]
+                "DAVIDAump[]": [1, null, null, null, null]
             },
             "L7 WARRIOZ": {               
                 "L7 OSIRIS": [0, 0, 0, null, 0], 
@@ -220,17 +220,17 @@
                 "NV": [null, null, 0, 1, null]
             },
             "BESERKERS": {               
-                "b0K Lwzin ": [5, 0, 0, 4, 0], 
-                "bot.X!": [3, 0, 0, 0, 1],
-                "b0K Goat¹⁵⁷": [2, 0, 0, 2, 0],
-                "b0KDDRAGO9": [1, 0, 0, 1, 0]
+                "b0K Lwzin ": [5, 0, 2, 4, 0], 
+                "bot.X!": [3, 0, 4, 0, 1],
+                "b0K Goat¹⁵⁷": [2, 0, 1, 2, 0],
+                "b0KDDRAGO9": [1, 0, 1, 1, 0]
             },
             "BESERKERS 2.0": {               
-                "b0K DOUTOR ✞": [1, 2, 0, 0, 0], 
-                "◉DメGhost™◉[]": [0, 0, 0, 0, 1],
-                "b0K_ZEUS炎[]": [0, 0, 0, 1, 0],
-                "Anibatcortes": [0, null, 0, null, null],
-                "b0k GLM": [null, null, 0, 2, 0]
+                "b0K DOUTOR ✞": [1, 2, 1, 0, 0], 
+                "◉DメGhost™◉[]": [0, 0, 2, 0, 1],
+                "b0K_ZEUS炎[]": [0, 0, 4, 1, 0],
+                "Anibatcortes": [0, null, null, null, null],
+                "b0k GLM": [null, null, 1, 2, 0]
             }
             
             
