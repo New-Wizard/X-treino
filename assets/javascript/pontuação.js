@@ -51,7 +51,7 @@
             const data = seasonSelecionada.data
             const nomeSeason = nomeDaSeason
     
-
+            console.log(arrayEquipes)
             arrayEquipes.forEach(infoEquipes => {
                 //serve para ajudar ao somatorio
                 let equipePts = 0
@@ -183,6 +183,7 @@
                 const createTr = document.createElement("tr")
                 createTr.setAttribute("id", `tr${posição}`)
                 createTr.setAttribute("name", `info${posição}`)
+                createTr.setAttribute("class", equipe)
                 const tr = tbody.appendChild(createTr)
                 
                 this.criarPosiçãoTd(tr)

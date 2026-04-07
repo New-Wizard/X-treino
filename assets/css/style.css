@@ -63,7 +63,7 @@ body {
 
 /* --- MAIN CONTAINER --- */
 .container {
-  padding: 4rem 2rem;
+  padding: 4rem 1rem;
 }
 .container .btn-scoring-system {
   background-color: #7C4710;
@@ -423,11 +423,12 @@ body {
 }
 .container .table_wrapper .desempenhoDetalhado h2 {
   color: #60A5FA;
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: bolder;
 }
 .container .table_wrapper .desempenhoDetalhado > h2 > span {
-  text-transform: uppercase;
+  color: yellow;
+  text-transform: capitalize;
   font-weight: bolder;
   margin-bottom: 1rem;
 }
@@ -449,27 +450,27 @@ body {
   text-align: center;
   border-radius: 2rem;
   background-color: #2563EB;
-  font-size: 1.8em;
+  font-size: 1.5em;
   color: white;
   margin-bottom: 1rem;
 }
 .container .table_wrapper .desempenhoDetalhado_quedas_partida_posição {
   color: rgb(218, 216, 216);
-  font-size: 1.6em;
+  font-size: 1.3em;
   margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .container .table_wrapper .desempenhoDetalhado_quedas_partida_posição span {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: yellow;
   font-weight: bolder;
   margin-left: 1rem;
 }
 .container .table_wrapper .desempenhoDetalhado_quedas_partida_kills {
   color: rgb(218, 216, 216);
-  font-size: 1.6em;
+  font-size: 1.3em;
   margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
@@ -484,7 +485,7 @@ body {
 .container .table_wrapper .desempenhoDetalhado_quedas_ptsPosição {
   border-top: 1px solid rgba(128, 128, 128, 0.534);
   color: rgba(218, 216, 216, 0.479);
-  font-size: 1.2em;
+  font-size: 0.8em;
   margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
@@ -492,12 +493,12 @@ body {
 }
 .container .table_wrapper .desempenhoDetalhado_quedas_ptsPosição span {
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 .container .table_wrapper .desempenhoDetalhado_quedas_ptsKills {
   border-bottom: 1px solid rgba(128, 128, 128, 0.534);
   color: rgba(218, 216, 216, 0.479);
-  font-size: 1.2em;
+  font-size: 0.8em;
   margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
@@ -505,11 +506,13 @@ body {
 }
 .container .table_wrapper .desempenhoDetalhado_quedas_ptsKills span {
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 .container .table_wrapper .desempenhoDetalhado_quedas_total {
+  display: flex;
+  justify-content: space-between;
   color: #58A5FA;
-  font-size: 1.6em;
+  font-size: 1.2em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -518,6 +521,7 @@ body {
 .container .table_wrapper .desempenhoDetalhado_quedas_total span {
   font-size: 1.8rem;
   font-weight: 900;
+  text-align: left;
 }
 .container {
   /* --- TABELA-FIM --- */
@@ -719,5 +723,10 @@ body {
   }
   .scoring-system {
     flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  .table_wrapper {
+    overflow-x: scroll !important;
   }
 }/*# sourceMappingURL=style.css.map */
