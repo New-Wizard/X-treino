@@ -81,7 +81,6 @@
 //                             total += totalPartida
 //                             let queda = equipe.detalhes[i].queda
                             
-                            
 //                             informaçãoDealhada.start(posição, kill, ptsPosição, ptsKill, totalPartida, queda, nomeEquipe, click)
 //                         }
                         
@@ -93,10 +92,7 @@
                 
 //             });
             
-//         },
-
-
-        
+//         }, 
 //         ptsPosição(posição){
 //             for(let i = 0; i < classificação.length; i++){
 //                 if(classificação[i].posição === posição){
@@ -113,10 +109,9 @@
 //     //criar uma estrutura de repetição para os dados
 
 //     const informaçãoDealhada = {
-//         start(posição, kills, ptsPosição, PtsKills, totalPartida, queda, nomeEquipe, click){
+//         start(posição, kills, ptsPosição, PtsKills, totalPartida, queda, nomeEquipe, click) {
             
-           
-                
+            
 //             //aq cria um contador de 1 ate 12, para percorrer cada btn
 //             for(let i = 1; i<=12;i++){
 
@@ -124,7 +119,7 @@
 //                 if (click.id === `info${i}`) {
                         
 //                     const tr = document.querySelector(`#tr${i}`)
-                        
+                    
 //                     this.criarDivInfo(tr, i, posição, kills, ptsPosição, PtsKills, totalPartida, queda, nomeEquipe)
                         
 //                 }
@@ -134,9 +129,8 @@
 //         },
 //         criarDivInfo(tr, i, posição, kills, ptsPosição, PtsKills, totalPartida, queda, nomeEquipe) {
 //             //aq ira pode apertar todos os btns e ira aparecer
-            
 //             const trInfo = tr.nextSibling
-            
+//              console.log(trInfo)
 //             if (trInfo && trInfo.id === `info${i}`) {
 //                 trInfo.remove()
 //                 return
@@ -171,9 +165,10 @@
 
             
 //             // for (let i = 1; i <= 5; i++){
+           
 //                 this.criarDivCadaPartida(divQuedas, posição, kills, ptsPosição, PtsKills, totalPartida, queda,)
                 
-//             //}
+//             // }
             
 //         },
 //         //colocar o nome do time aq==========
@@ -187,11 +182,12 @@
 //         },
 
 //         criarDivCadaPartida(divPrincipal, posição, kills, ptsPosição, PtsKills, totalPartida, queda,) {
+            
 //             const divCadaPartida = document.createElement("div")
 //             divCadaPartida.setAttribute("class", "desempenhoDetalhado_quedas_partida")
 //             divPrincipal.appendChild(divCadaPartida)
 //             this.createH3(divCadaPartida, queda)
-//             this.createPPosição(divCadaPartida)
+//             this.createPPosição(divCadaPartida, posição)
 //             this.createPKills(divCadaPartida)
 //             this.createPPtsPosição(divCadaPartida)
 //             this.createPPtsKills(divCadaPartida)
@@ -207,11 +203,11 @@
 
 //             divCadaPartida.appendChild(h3)
 //         },
-//         createPPosição(divCadaPartida) {
+//         createPPosição(divCadaPartida, posição) {
 //             const p = document.createElement("p")
 //             p.setAttribute("class", "desempenhoDetalhado_quedas_partida_posição")
 //             const span = document.createElement("span")
-//             span.textContent = "2"
+//             span.textContent = posição
 //             p.textContent = "Posição:"
 //             p.appendChild(span)
 //             divCadaPartida.appendChild(p)
@@ -285,10 +281,18 @@
     iniciarApp();
 
     const classificação = [
-        { posição: 1, pts: 12 }, { posição: 2, pts: 9 }, { posição: 3, pts: 8 },
-        { posição: 4, pts: 7 }, { posição: 5, pts: 6 }, { posição: 6, pts: 5 },
-        { posição: 7, pts: 4 }, { posição: 8, pts: 3 }, { posição: 9, pts: 2 },
-        { posição: 10, pts: 1 }, { posição: 11, pts: 0 }, { posição: 12, pts: 0 },
+        { posição: 1, pts: 12 },
+        { posição: 2, pts: 9 },
+        { posição: 3, pts: 8 },
+        { posição: 4, pts: 7 },
+        { posição: 5, pts: 6 },
+        { posição: 6, pts: 5 },
+        { posição: 7, pts: 4 },
+        { posição: 8, pts: 3 },
+        { posição: 9, pts: 2 },
+        { posição: 10, pts: 1 },
+        { posição: 11, pts: 0 },
+        { posição: 12, pts: 0 },
         { posição: 13, pts: 0 }
     ];
 
@@ -318,6 +322,8 @@
                 if (tr.className === equipe.equipe) {
                     // ENVIAMOS OS DETALHES COMPLETOS (O ARRAY)
                     informaçãoDealhada.exibir(tr, index, equipe.detalhes, equipe.equipe);
+                    
+                    
                 }
             });
         },
@@ -333,7 +339,6 @@
             // Verifica se a linha de detalhes já existe para fechar (Toggle)
             const idLinhaInfo = `detalhe_linha_${i}`;
             const linhaExistente = document.getElementById(idLinhaInfo);
-
             if (linhaExistente) {
                 linhaExistente.remove();
                 return;
@@ -380,16 +385,30 @@
             const divCadaPartida = document.createElement("div");
             divCadaPartida.className = "desempenhoDetalhado_quedas_partida";
 
-            // Usando Template String para o HTML ficar limpo e fácil de ler
-            divCadaPartida.innerHTML = `
+            console.log(divCadaPartida)
+            if (partida.posicao === 13) {
+                divCadaPartida.innerHTML = `
                 <h3>Partida <span>${partida.queda}</span></h3>
-                <p class="desempenhoDetalhado_quedas_partida_posição">Posição: <span>${partida.posicao}º</span></p>
-                <p class="desempenhoDetalhado_quedas_partida_kills">Kills: <span>${partida.kills}</span></p>
+                <p class="desempenhoDetalhado_quedas_partida_posição">Posição: <span>Não jogou</span></p>
+                <p class="desempenhoDetalhado_quedas_partida_kills">Kills: <span>Não jogou</span></p>
                 <p class="desempenhoDetalhado_quedas_ptsPosição">Pts Posição: <span>${ptsPos}</span></p>
                 <p class="desempenhoDetalhado_quedas_ptsKills">Pts Kills: <span>${partida.kills}</span></p>
                 <hr>
                 <p class="desempenhoDetalhado_quedas_total">Total: <span>${total}</span></p>
             `;
+            } else {
+                // Usando Template String para o HTML ficar limpo e fácil de ler
+                divCadaPartida.innerHTML = `
+                    <h3>Partida <span>${partida.queda}</span></h3>
+                    <p class="desempenhoDetalhado_quedas_partida_posição">Posição: <span>${partida.posicao}º</span></p>
+                    <p class="desempenhoDetalhado_quedas_partida_kills">Kills: <span>${partida.kills}</span></p>
+                    <p class="desempenhoDetalhado_quedas_ptsPosição">Pts Posição: <span>${ptsPos}</span></p>
+                    <p class="desempenhoDetalhado_quedas_ptsKills">Pts Kills: <span>${partida.kills}</span></p>
+                    <hr>
+                    <p class="desempenhoDetalhado_quedas_total">Total: <span>${total}</span></p>`;
+            }
+
+            
 
             return divCadaPartida;
         }
