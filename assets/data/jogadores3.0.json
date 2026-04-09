@@ -151,7 +151,7 @@
            
         }
     },
-     "season8": {
+    "season8": {
         "data": "06/04/2026",
         "equipes": {
             "HAZARD FM7": {               
@@ -238,86 +238,89 @@
         }
     },
     "season9": {
-  "SCORPIONS": {
-    "FOX ANDzin": [8, 5, 3, 4, 7],
-    "I'm black": [2, 7, 3, 2, 2],
-    "FOX MASSA": [5, 5, 3, 2, 8],
-    "w7♡♡PELÉ": [1, 0, 1, 3, 2]
-  },
-  "BESERKERS": {
-    "bK Lwzin": [2, 3, 1, 4, 2],
-    "bK CAOS": [0, 1, 0, 2, 2],
-    "bK Goat¹⁵⁷": [1, 0, 1, 3, 4],
-    "bKDRAGO9": [2, 0, 1, 2, 2]
-  },
-  "BESERKERS 2.0": {
-    "ØxGhost™": [1, 2, 2, 1, 0],
-    "bK GLM³⁰ あ": [0, 0, 1, 3, 3],
-    "bK DOUTOR": [1, 2, 0, 4, 0],
-    "bK ZEUS炎": [1, 1, null, 2, 1]
-  },
-  "001 GOATS": {
-    "001 vin™": [2, 1, 0, 0, 0],
-    "Dragonsx!": [0, 0, 0, 2, 0],
-    "7nxz ✓": [4, null, null, 1, 5],
-    "MF DINO!": [null, null, null, null, 1],
-    "juhcat": [6, 4, 2, 1, null]
-  },
-  "LK": {
-    "LK*ATIRADOR*": [6, 0, 2, 0, 4],
-    "LK-GENERAL": [null, 0, 2, 1, 3],
-    "LK duzinn$$": [1, 0, 2, 0, null],
-    "LK_GanjaV8™": [null, null, 0, null, null],
-    "LK BIEL⁰⁵¹": [3, null, null, null, null],
-    "PEDRO (LK)": [3, null, null, null, null]
-  },
-  "EQUIPE X": {
-    "XXXX n": [0, 3, 1, 5, 3],
-    "DT4 APOLLO": [0, 1, 4, 0, 0],
-    "XXXX trapx7": [1, 2, 1, 1, 0],
-    "XXXX JECK": [1, 2, 9, 1, null]
-  },
-  "BARCELONA": {
-    "BCN MANOLO²³": [null, 2, 0, 6, 1],
-    "BCN CHELLY": [0, 0, 1, 2, 1],
-    "job 愛": [0, 2, 1, 1, 1],
-    "VULGO_DINHO": [null, null, 1, 4, null],
-    "..Lipe⁶²": [null, 2, null, null, null]
-  },
-  "BESERKERS 3.0": {
-    "bielzinxit": [2, 0, 0, 3, 1],
-    "lustmoneyk": [5, 1, 0, 4, 3],
-    "aníbalcorteร": [1, 2, 0, 1, 0],
-    "♠fantama♠": [3, 1, 1, null, null]
-  },
-  "GHOST GIRLS": {
-    "SW ASTRID": [5, 0, 2, 5, 1],
-    "SW DZ9!": [3, 1, 7, 1, 0],
-    "SW G_SOUZA": [3, 0, 3, 2, 0],
-    "SW INGRID9": [1, 0, 1, 0, 0]
-  },
-  "THE CHARCUDOS": {
-    "者需要複製我": [null, null, null, 0, 2],
-    "LOS! G7ZIN": [1, 0, 0, 2, 1],
-    "OCZ⁰⁰⁷炎": [null, 0, 1, 2, 1],
-    "wodkayo": [null, null, 0, null, null],
-    "FULANINHØ": [1, 2, null, null, null],
-    "FOX F7.": [0, null, null, null, null],
-    "FOX 999z": [0, null, null, null, null]
-  },
-  "DE MANAUS": {
-    "odio'": [1, 0, 0, 1, null],
-    "DM S7yle": [0, 0, 0, 0, null],
-    "愛 d'mJAPONESA": [2, 0, 1, 0, null],
-    "木 FELIPE 69": [null, null, null, 0, null],
-    "†mafiosa†": [0, null, null, null, null]
-  },
-  "HAZARD FM7": {
-    "FM7 Noxx.MVP": [0, 1, null, null, null],
-    "J6KAIOL": [1, 1, null, null, null],
-    "FM7 SANTOSX7": [2, 1, null, null, null]
-  }
-}
+    "data": "DD/MM/2026", 
+    "equipes": {
+        "SCORPIONS": {
+            "FOX ANDzin": [8, 5, 3, 4, 7],
+            "I'm black": [2, 7, 3, 2, 2],
+            "FOX MASSA": [5, 5, 3, 2, 8],
+            "w7♡♡PELÉ": [1, 0, 1, 3, 2]
+        },
+        "BESERKERS": {
+            "bK Lwzin": [2, 3, 1, 4, 2],
+            "bK CAOS": [0, 1, 0, 2, 2],
+            "bK Goat¹⁵⁷": [1, 0, 1, 3, 4],
+            "bKDRAGO9": [2, 0, 1, 2, 2]
+        },
+        "BESERKERS 2.0": {
+            "ØxGhost™": [1, 2, 2, 1, 0],
+            "bK GLM³⁰ あ": [0, 0, 1, 3, 3],
+            "bK DOUTOR": [1, 2, 0, 4, 0],
+            "bK ZEUS炎": [1, 1, null, 2, 1]
+        },
+        "001 GOATS": {
+            "001 vin™": [2, 1, 0, 0, 0],
+            "Dragonsx!": [0, 0, 0, 2, 0],
+            "7nxz ✓": [4, null, null, 1, 5],
+            "MF DINO!": [null, null, null, null, 1],
+            "juhcat": [6, 4, 2, 1, null]
+        },
+        "LK": {
+            "LK*ATIRADOR*": [6, 0, 2, 0, 4],
+            "LK-GENERAL": [null, 0, 2, 1, 3],
+            "LK duzinn$$": [1, 0, 2, 0, null],
+            "LK_GanjaV8™": [null, null, 0, null, null],
+            "LK BIEL⁰⁵¹": [3, null, null, null, null],
+            "PEDRO (LK)": [3, null, null, null, null]
+        },
+        "EQUIPE X": {
+            "XXXX n": [0, 3, 1, 5, 3],
+            "DT4 APOLLO": [0, 1, 4, 0, 0],
+            "XXXX trapx7": [1, 2, 1, 1, 0],
+            "XXXX JECK": [1, 2, 9, 1, null]
+        },
+        "BARCELONA": {
+            "BCN MANOLO²³": [null, 2, 0, 6, 1],
+            "BCN CHELLY": [0, 0, 1, 2, 1],
+            "job 愛": [0, 2, 1, 1, 1],
+            "VULGO_DINHO": [null, null, 1, 4, null],
+            "..Lipe⁶²": [null, 2, null, null, null]
+        },
+        "BESERKERS 3.0": {
+            "bielzinxit": [2, 0, 0, 3, 1],
+            "lustmoneyk": [5, 1, 0, 4, 3],
+            "aníbalcorteร": [1, 2, 0, 1, 0],
+            "♠fantama♠": [3, 1, 1, null, null]
+        },
+        "GHOST GIRLS": {
+            "SW ASTRID": [5, 0, 2, 5, 1],
+            "SW DZ9!": [3, 1, 7, 1, 0],
+            "SW G_SOUZA": [3, 0, 3, 2, 0],
+            "SW INGRID9": [1, 0, 1, 0, 0]
+        },
+        "THE CHARCUDOS": {
+            "者需要複製我": [null, null, null, 0, 2],
+            "LOS! G7ZIN": [1, 0, 0, 2, 1],
+            "OCZ⁰⁰⁷炎": [null, 0, 1, 2, 1],
+            "wodkayo": [null, null, 0, null, null],
+            "FULANINHØ": [1, 2, null, null, null],
+            "FOX F7.": [0, null, null, null, null],
+            "FOX 999z": [0, null, null, null, null]
+        },
+        "DE MANAUS": {
+            "odio'": [1, 0, 0, 1, null],
+            "DM S7yle": [0, 0, 0, 0, null],
+            "愛 d'mJAPONESA": [2, 0, 1, 0, null],
+            "木 FELIPE 69": [null, null, null, 0, null],
+            "†mafiosa†": [0, null, null, null, null]
+        },
+        "HAZARD FM7": {
+            "FM7 Noxx.MVP": [0, 1, null, null, null],
+            "J6KAIOL": [1, 1, null, null, null],
+            "FM7 SANTOSX7": [2, 1, null, null, null]
+        }
+    }
+    }
 
     
 }

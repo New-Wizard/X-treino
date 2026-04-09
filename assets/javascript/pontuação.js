@@ -375,6 +375,7 @@
             this.criaPosição(containerJogador, posicao, nomeJogador, kill, equipe)
         },
         criaPosição(containerJogador, posicao, nomeJogador, kill, equipe) {
+            console.log("aaaaa")
             const p = document.createElement("p")
             p.setAttribute("class", "badge")
             p.textContent = posicao
